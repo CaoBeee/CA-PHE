@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+:root {
+	--logo-color-1: rgb(167, 149, 131);
+}
+
 html {
 	box-sizing: border-box;
 }
