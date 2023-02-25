@@ -6,7 +6,3 @@
 
 - Added HTML & CSS Files
 - Added mockup
-
-### Removed
-
--
