@@ -43,6 +43,10 @@ body {
 }
 
     
+    .LandingPage__nav-links a {
+        text-decoration: none;
+    }
+
     .LandingPage__nav-links button {
         background-color: var(--navbar-bg);
         border-color: black;
