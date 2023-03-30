@@ -5,7 +5,7 @@ import logo from '../public/images/ca phe mock client profile transparent.png';
 import facebookLogo from '../public/images/Facebook Logo.png';
 import instagramLogo from '../public/images/Instagram Logo.png';
 import twitterLogo from '../public/images/Twitter Logo.png';
-import styles from '../styles/LandingPage.module.css';
+import styles from '../styles/Index.module.css';
 
 const LandingPage = () => {
     return (

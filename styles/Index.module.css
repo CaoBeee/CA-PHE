@@ -1,37 +1,47 @@
+.LandingPage{
+    justify-content:space-between;
+}
+
+
+
 .LandingPage__Logo {
-    display:flex;
-    height: 60em;
-    width: 60em;
-    margin:0;
-    padding:0;
-    flex-direction: column;
-    overflow:hidden;
+    display:inline-flex;
+    height: 18em;
+    width: 20em;
+    min-width: 20em;
     position: relative;
+    margin-right: 10em;
+    margin-bottom: 5em;
+    transform: translate(25em, 15em);
+
 }
 
 .LandingPage__navLinks {
     background-color: rgb(239, 234, 228);
     color: rgb(51, 50, 39);
     list-style: none;
-    margin: 0;
     align-items: center;
     justify-items: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;
     font-size: 20px;
     padding: 0;
-    position: absolute;
-    right: 50px;
-    top: 20px;
+    position: relative;
     height: auto;
-    overflow: visible;
+    width:fit-content;
+    float: right;
+    transform: translate(-2em, 1em);
 }
 
-    
+
     .LandingPage__navLinks a {
-        position:relative;
+        position: relative;
         text-decoration: none;
+        margin:auto;
+        overflow: auto;
+        float:right;
+        pointer-events:none;
     }
 
     .LandingPage__navLinks button {
@@ -42,17 +52,18 @@
         border-radius: 5px;
         font-size: 20px;
         margin: 10px;
-        padding: 1rem;
+        padding:0;
         padding-inline-start: 4em;
         padding-inline-end: 4rem;
         width: 25rem;
-        display: block;
+        height:3.5rem;
+        pointer-events:all;
     }
 
-    .LandingPage__navLinks button:hover,
-    .LandingPage__navLinks button:active {
+    .LandingPage__navLinks button:hover {
         background: #808080;
         color: white;
+        cursor:pointer;
     }
 
 .socials img{
