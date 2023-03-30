@@ -1,0 +1,66 @@
+.LandingPage__Logo {
+    display:flex;
+    height: 60em;
+    width: 60em;
+    margin:0;
+    padding:0;
+    flex-direction: column;
+    overflow:hidden;
+    position: relative;
+}
+
+.LandingPage__navLinks {
+    background-color: rgb(239, 234, 228);
+    color: rgb(51, 50, 39);
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    height: auto;
+    overflow: visible;
+}
+
+    
+    .LandingPage__navLinks a {
+        position:relative;
+        text-decoration: none;
+    }
+
+    .LandingPage__navLinks button {
+        background-color: rgb(239, 234, 228);
+        border-color: black;
+        border-style: solid;
+        border-width: 1.5px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 10px;
+        padding: 1rem;
+        padding-inline-start: 4em;
+        padding-inline-end: 4rem;
+        width: 25rem;
+        display: block;
+    }
+
+    .LandingPage__navLinks button:hover,
+    .LandingPage__navLinks button:active {
+        background: #808080;
+        color: white;
+    }
+
+.socials img{
+    width: 2em;
+    height: 2em;
+    padding: 1em;
+    padding-inline-start: 1.5em;
+    padding-inline-end: 1.5em;
+    display: inline-flex;
+    transform: translateX(11px);
+}
