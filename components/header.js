@@ -1,11 +1,13 @@
 const Header = () => {
 	return (
 		<div id='header'>
-			<p>Address #</p>
-			<img
-				src='https://media.istockphoto.com/id/1139917357/photo/another-one-thank-you.jpg?s=2048x2048&w=is&k=20&c=xyH7ovsr545kibuvpwxXmpPc_b3Wf94m6dqGMBUZ26k='
-				alt='header'
-			></img>
+			<p>Address Number</p>
+			<a href='/'>
+				<img
+					src='https://thumbs.dreamstime.com/b/coffee-banner-logo-cup-cup-hot-seed-shop-cafe-art-vector-heart-beverage-drink-tea-java-pattern-restaurant-45582555.jpg'
+					alt='header'
+				></img>
+			</a>
 		</div>
 	)
 }

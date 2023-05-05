@@ -9,15 +9,13 @@
 }
 
 #header {
-	margin-top: 0;
 	background-color: lightgray;
 }
 
 #header img {
-	padding-top: 0.5rem;
 	display: block;
-	width: 50rem;
-	height: 15rem;
+	width: 25rem;
+	height: 10rem;
 	margin: auto;
 	padding-bottom: 1rem;
 }
@@ -41,16 +39,14 @@
 
 #navbar li {
 	text-align: center;
-	/* border-color: black; */
-	border-style: solid;
 	border-width: 1.5px;
+	border-radius: 0.5rem;
 	background-color: gray;
 	list-style-type: none;
-	margin: 10px;
-	width: 15rem;
 	margin-right: 2rem;
 	float: none;
 	display: inline-block;
+	margin: 10px 1rem;
 }
 
 #navbar a {
@@ -58,6 +54,10 @@
 	text-decoration: none;
 	color: white;
 	display: block;
-	margin: 0;
 	padding: 1rem;
+	font-size: 30px;
+	font-weight: bold;
+	display: flex;
+	padding: 1rem 1rem;
+	justify-content: space-between;
 }

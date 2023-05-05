@@ -5,7 +5,7 @@ const NavBar = () => {
 		<React.Fragment>
 			<ul id='navbar'>
 				<li>
-					<a href='/'>Home</a>
+					<a href='/'>Menu</a>
 				</li>
 				<li>
 					<a href='/shop'>Shop</a>
