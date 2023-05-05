@@ -7,3 +7,12 @@
 	--navbar-bg: rgb(239, 234, 228);
 	--text-color1: rgb(51, 50, 39);
 }
+
+/* Reset all default styles */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
