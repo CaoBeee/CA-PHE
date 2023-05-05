@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from '../styles/NavBar.module.css'
 
 const NavBar = () => {
 	return (
 		<React.Fragment>
-			<ul id='navbar'>
+			<ul class={styles.navbar}>
 				<li>
 					<a href='/'>Menu</a>
 				</li>

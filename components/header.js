@@ -1,6 +1,8 @@
+import styles from '../styles/Header.module.css'
+
 const Header = () => {
 	return (
-		<div id='header'>
+		<div class={styles.header}>
 			<p>Address Number</p>
 			<a href='/'>
 				<img
