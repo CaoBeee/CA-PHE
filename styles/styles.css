@@ -41,13 +41,12 @@
 
 #navbar li {
 	text-align: center;
-	border-color: black;
+	/* border-color: black; */
 	border-style: solid;
 	border-width: 1.5px;
 	background-color: gray;
 	list-style-type: none;
 	margin: 10px;
-	/* padding: 1rem; */
 	width: 15rem;
 	margin-right: 2rem;
 	float: none;
