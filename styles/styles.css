@@ -2,77 +2,66 @@
 /* CSS Document */
 
 :root {
-  --logo-color1: rgb(167, 149, 131);
-  --background-color1: rgb(250, 249, 247);
-  --navbar-bg: rgb(239, 234, 228);
-  --text-color1: rgb(51, 50, 39);
+	--logo-color1: rgb(167, 149, 131);
+	--background-color1: rgb(250, 249, 247);
+	--navbar-bg: rgb(239, 234, 228);
+	--text-color1: rgb(51, 50, 39);
 }
 
-html {
-  box-sizing: border-box;
+#header {
+	margin-top: 0;
+	background-color: lightgray;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  width: auto;
-  height: auto;
-  background-color: var(--background-color1);
+#header img {
+	padding-top: 0.5rem;
+	display: block;
+	width: 50rem;
+	height: 15rem;
+	margin: auto;
+	padding-bottom: 1rem;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  position: absolute;
-  width: 100%;
-}
-
-header div {
-  width: 100%;
+#header p {
+	padding-top: 1rem;
+	text-align: center;
 }
 
 #navbar {
-  background-color: var(--navbar-bg);
-  color: var(--text-color1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: row;
+	color: black;
+	margin: auto;
+	padding-left: 20rem;
+	padding-right: 20rem;
+	float: none;
+	display: inline-block;
 }
 
 #navbar ul {
-  list-style: none;
-  margin: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: 20px;
-  padding: 0;
-  position: absolute;
-  right: 50px;
+	background-color: gray;
+	display: flex;
+	list-style-type: none;
 }
 
-li a {
-  text-decoration: none;
-  color: var(--text-color1);
+#navbar > li {
+	text-align: center;
+	border-color: black;
+	border-style: solid;
+	border-width: 1.5px;
+	background-color: gray;
+	list-style-type: none;
+	margin: 10px;
+	padding: 1rem;
+	width: 15rem;
+	margin-right: 2rem;
+	float: none;
+	display: inline-block;
 }
 
-li {
-  border-color: black;
-  border-style: solid;
-  border-width: 1.5px;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 1rem;
-  padding-inline-start: 4em;
-  padding-inline-end: 4rem;
-  width: 15rem;
-  display: block;
-}
-
-img {
-  max-width: 100%;
-  flex-direction: column;
+#navbar a {
+	text-align: center;
+	text-decoration: none;
+	color: white;
 }
