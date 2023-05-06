@@ -6,7 +6,6 @@ import NavBar from './navbar'
 const Header = () => {
 	return (
 		<div className={styles.header}>
-			{/* <p>Address Number</p> */}
 			<a href='/'>
 				<Image
 					src={logo}
