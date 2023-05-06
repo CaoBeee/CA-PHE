@@ -15,3 +15,24 @@
 	font-size: 32px;
 	font-family: 'quicksand';
 }
+
+.gallery {
+	display: grid;
+	grid-template-rows: 1fr 1fr; /* two rows of equal height */
+	grid-auto-flow: column; /* horizontal row */
+	overflow-x: auto; /* enable horizontal scrolling */
+	scroll-snap-type: x mandatory; /* enable snap scrolling */
+}
+
+.gallery > .image {
+	width: 257px; /* adjust to match the size of your images */
+	height: 216px; /* adjust to match the size of your images */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
