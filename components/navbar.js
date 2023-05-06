@@ -9,13 +9,13 @@ const NavBar = () => {
 					<a href='/'>Menu</a>
 				</li>
 				<li>
-					<a href='/Shop'>Shop</a>
+					<a href='/shop'>Shop</a>
 				</li>
 				<li>
-					<a href='/About'>About</a>
+					<a href='/about'>About</a>
 				</li>
 				<li>
-					<a href='/Contact'>Contact</a>
+					<a href='/contact'>Contact</a>
 				</li>
 			</ul>
 		</React.Fragment>
