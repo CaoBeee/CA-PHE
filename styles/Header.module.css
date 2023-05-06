@@ -1,0 +1,16 @@
+.header {
+	background-color: lightgray;
+}
+
+.header img {
+	display: block;
+	width: 25rem;
+	height: 10rem;
+	margin: auto;
+	padding-bottom: 1rem;
+}
+
+.header p {
+	padding-top: 1rem;
+	text-align: center;
+}
