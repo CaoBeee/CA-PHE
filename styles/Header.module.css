@@ -1,16 +1,18 @@
 .header {
-	background-color: lightgray;
+	width: 100vw;
+	background: linear-gradient(180deg, #adc178 8.85%, rgba(173, 193, 120, 0) 100%);
 }
 
 .header img {
-	display: block;
-	width: 25rem;
-	height: 10rem;
+	display: flex;
 	margin: auto;
-	padding-bottom: 1rem;
+	height: 142px;
+	width: 511px;
+	margin-top: 1rem;
 }
 
 .header p {
-	padding-top: 1rem;
+	display: flex;
+	margin: auto;
 	text-align: center;
 }

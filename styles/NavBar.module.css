@@ -1,36 +1,25 @@
 .navbar {
-	background-color: lightgray;
 	color: black;
-	margin: auto;
 	text-align: center;
-}
-
-.navbar ul {
-	background-color: gray;
-	list-style-type: none;
+	width: 100vw;
 }
 
 .navbar li {
-	text-align: center;
-	border-width: 1.5px;
-	border-radius: 0.5rem;
-	background-color: gray;
 	list-style-type: none;
-	margin-right: 2rem;
-	float: none;
 	display: inline-block;
-	margin: 10px 1rem;
 }
 
 .navbar a {
 	text-align: center;
+	align-items: center;
+	display: inline-block;
 	text-decoration: none;
-	color: white;
-	display: block;
-	padding: 1rem;
-	font-size: 30px;
-	font-weight: bold;
-	display: flex;
-	padding: 1rem 1rem;
-	justify-content: space-between;
+	color: black;
+	font-size: 22px;
+	font-weight: 500;
+	font-family: 'Quicksand';
+	margin-top: 14px;
+	height: auto;
+	width: 10rem;
+	margin-right: 1rem;
 }
