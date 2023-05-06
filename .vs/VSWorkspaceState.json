@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\components",
+    "\\public",
+    "\\styles"
   ],
+  "SelectedNode": "\\components\\carousel.js",
   "PreviewInSolutionExplorer": false
 }
