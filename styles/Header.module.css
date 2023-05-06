@@ -1,24 +1,16 @@
 .header {
-	display: flex;
-	flex-direction:column;
-	width: 100vw;
 	background-color: lightgray;
-	margin:auto;
 }
 
 .header img {
-	display:flex;
+	display: block;
 	width: 25rem;
 	height: 10rem;
 	margin: auto;
 	padding-bottom: 1rem;
-	
 }
 
 .header p {
-	display:flex;
-	margin:auto;
-	padding-bottom:1rem;
 	padding-top: 1rem;
 	text-align: center;
 }
