@@ -4,7 +4,7 @@ import styles from '../styles/NavBar.module.css'
 const NavBar = () => {
 	return (
 		<React.Fragment>
-			<ul class={styles.navbar}>
+			<ul className={styles.navbar}>
 				<li>
 					<a href='/'>Menu</a>
 				</li>

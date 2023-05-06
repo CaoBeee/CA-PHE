@@ -1,14 +1,17 @@
 import styles from '../styles/Header.module.css'
+import Image from 'next/image'
+import logo from '../public/images/logo_caphe-01.svg'
+import NavBar from './navbar'
 
 const Header = () => {
 	return (
-		<div class={styles.header}>
-			<p>Address Number</p>
+		<div className={styles.header}>
+			{/* <p>Address Number</p> */}
 			<a href='/'>
-				<img
-					src='https://thumbs.dreamstime.com/b/coffee-banner-logo-cup-cup-hot-seed-shop-cafe-art-vector-heart-beverage-drink-tea-java-pattern-restaurant-45582555.jpg'
-					alt='header'
-				></img>
+				<Image
+					src={logo}
+					alt='Logo'
+				></Image>
 			</a>
 		</div>
 	)
