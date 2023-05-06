@@ -71,3 +71,15 @@
 	display: inline-flex;
 	transform: translateX(11px);
 } */
+.container{
+	display:flex;
+	flex-direction:column;
+	position:relative;
+	justify-content:center;
+}
+
+.carouselContainer{
+	display:flex;
+	position:relative;
+	
+}
