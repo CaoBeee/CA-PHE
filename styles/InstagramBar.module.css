@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 1920px;
+	height: 255px;
+	background: linear-gradient(91.8deg, #fdff9b 0%, #fafac6 0.01%, #e48c8c 100%);
+	box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container p {
+	display: flex;
+	font-size: 32px;
+	font-family: 'quicksand';
+}
