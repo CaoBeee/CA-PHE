@@ -4,6 +4,7 @@ import NavBar from '../components/navbar'
 import ImageCarousel from '../components/carousel'
 import styles from '../styles/Index.module.css'
 import headerStyles from '../styles/Header.module.css'
+import InstagramBar from '../components/instagramBar'
 
 const LandingPage = () => {
 	const images = [
@@ -66,6 +67,7 @@ const LandingPage = () => {
 					/>
 				</div>
 			</div>
+			<InstagramBar />
 		</React.Fragment>
 	)
 }
