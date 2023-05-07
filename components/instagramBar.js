@@ -16,6 +16,7 @@ const InstagramBar = () => {
 				alt=''
 				width={257}
 				height={216}
+				key={i}
 			/>
 		)
 	}
