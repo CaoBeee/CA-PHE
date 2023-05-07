@@ -1,0 +1,33 @@
+﻿.container{
+    display:flex;
+    flex-direction:column;
+    width: fit-content;
+    height:fit-content;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-left: 5vw;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.container div{
+    display: flex;
+    gap: 0.5em;
+    margin: auto;
+}
+
+.menu_button {
+    width: 6em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border: none;
+    font-size: 18px;
+    transition: all 0.4s linear; 
+}
+
+.menu_button:hover{
+    filter:brightness(1.2);
+    text-decoration:underline;
+}
