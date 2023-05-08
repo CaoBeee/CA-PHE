@@ -1,63 +1,59 @@
 .contact h1 {
-    padding: 5px 0px;
+	padding: 5px 0px;
 }
 
 .contact p {
-    padding: 5px 0px;
+	padding: 5px 0px;
 }
 
 .contact span {
-    text-decoration: bold;
+	text-decoration: bold;
 }
 
 .contact form {
-    width: 40%;
+	width: 40%;
 }
 
 .contact fieldset {
-    border: none;
+	border: none;
 }
 
 .contact input:not(textarea) {
-    width: 30em;
-    padding: 5px;
-    margin: 4px 0px;
+	width: 30em;
+	padding: 5px;
+	margin: 4px 0px;
 }
 
-.contact input[type=textarea] {
-    height: 10em;
-    width: 30em;
+.contact input[type='textarea'] {
+	height: 10em;
+	width: 30em;
 }
 
-.contact input[type="textarea"]::placeholder {
-    position: relative;
-    white-space: pre-line;
-    top: -50px;
+.contact input[type='textarea']::placeholder {
+	position: relative;
+	white-space: pre-line;
+	top: -50px;
 }
 
-.contact input[type="textarea"]:-ms-input-placeholder {
-    position: relative;
-    white-space: pre-line;
-    top: -50px;
+.contact input[type='textarea']:-ms-input-placeholder {
+	position: relative;
+	white-space: pre-line;
+	top: -50px;
 }
 
-.contact input[type="textarea"]::-webkit-input-placeholder {
-    position: relative;
-    white-space: pre-line;
-    top: -50px;
+.contact input[type='textarea']::-webkit-input-placeholder {
+	position: relative;
+	white-space: pre-line;
+	top: -50px;
 }
 
-.contact input[type="textarea"]::selection {
-    vertical-align: top;
-    line-height: 1.2em;
+.contact input[type='textarea']::selection {
+	vertical-align: top;
+	line-height: 1.2em;
 }
 
-.contact input[type=submit] {
-    float: right;
-    width: 8em;
-    border-radius: 10px;
+.contact input[type='submit'] {
+	float: right;
+	width: 8em;
+	border-radius: 10px;
 }
-
-
-
-
