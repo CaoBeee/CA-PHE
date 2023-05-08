@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/header';
 import NavBar from '../components/navbar';
 import ImageCarousel from '../components/carousel';
-import MenuButtons from '../components/menuButtons';
 import styles from '../styles/Index.module.css';
 import headerStyles from '../styles/Header.module.css';
 import InstagramBar from '../components/instagramBar';
@@ -53,10 +52,6 @@ const LandingPage = () => {
     return (
         <React.Fragment>
             <div className={styles.container}>
-                <div className={headerStyles.header}>
-                    <Header />
-                    <NavBar />
-                </div>
                 <ImageCarousel
                     numSlides={3}
                     images={images}
@@ -64,7 +59,6 @@ const LandingPage = () => {
                     caption={caption}
                     body={body}
                 />
-                <MenuButtons/>
             </div>
             <InstagramBar />
         </React.Fragment>
