@@ -6,7 +6,7 @@ const NavBar = () => {
 		<React.Fragment>
 			<ul className={styles.navbar}>
 				<li>
-					<a href='/'>Menu</a>
+					<a href='/Menu'>Menu</a>
 				</li>
 				<li>
 					<a href='/Shop'>Shop</a>
