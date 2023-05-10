@@ -7,7 +7,7 @@
 }
 
 .contact span {
-	text-decoration: bold;
+	font-weight: bold;
 }
 
 .contact form {
@@ -34,6 +34,13 @@
 	white-space: pre-line;
 	top: -50px;
 }
+
+.contact textarea {
+	height: 10em;
+	width: 30em;
+	padding: 4px;
+}
+
 
 .contact input[type='textarea']:-ms-input-placeholder {
 	position: relative;

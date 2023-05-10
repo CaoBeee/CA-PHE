@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\components",
+    "\\pages",
+    "\\styles"
   ],
+  "SelectedNode": "\\components\\Layout.js",
   "PreviewInSolutionExplorer": false
 }

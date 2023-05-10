@@ -20,7 +20,7 @@ const ContactForm = () => {
                     </p>
                     <p>
                         <label for="feedback" id="feedback-label">
-                        <input id="feedback" type="textarea" placeholder="We would love to hear from our community so if you have any positive feedback or concerns send us a message here or walk in and ask with our team" name="feedback" required></input>
+                        <textarea id="feedback" type="textarea" placeholder="We would love to hear from our community so if you have any positive feedback or concerns send us a message here or walk in and ask with our team" name="feedback" required></textarea>
                     </label>
                     </p>
                     <input id="submit" type="submit" value="Send Message" />
