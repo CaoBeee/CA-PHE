@@ -5,15 +5,12 @@ import Contact from '../components/contact'
 import ContactForm from '../components/contactform'
 import Container from '../components/container'
 
-
 const LandingPage = () => {
 	return (
 		<React.Fragment>
-			<Header />
-			<NavBar />
 			<Container>
-			<Contact />
-			<ContactForm />
+				<Contact />
+				<ContactForm />
 			</Container>
 		</React.Fragment>
 	)
