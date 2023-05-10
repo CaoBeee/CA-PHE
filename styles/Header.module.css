@@ -1,9 +1,8 @@
 .header {
-	display:flex;
-	flex-direction:column;
-	top:0;
+	display: flex;
+	flex-direction: column;
+	top: 0;
 	width: 100vw;
-	background: linear-gradient(180deg, #adc178 8.85%, rgba(173, 193, 120, 0) 100%);
 }
 
 .header img {
@@ -17,4 +16,8 @@
 	display: flex;
 	margin: auto;
 	text-align: center;
+}
+
+.headerBG {
+	background: linear-gradient(180deg, rgba(173, 193, 120, 1), rgba(173, 193, 120, 0));
 }
