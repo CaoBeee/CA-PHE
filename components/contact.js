@@ -15,7 +15,7 @@ const Contact = () => {
 				<span>Locations:</span>
 			</p>
 			<p>123 ABC Street</p>
-			<p>SoCal, CA 00001</p>
+			<p>SoCal, CA 00000</p>
 		</div>
 	)
 }
