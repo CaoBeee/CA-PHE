@@ -1,0 +1,29 @@
+.Container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.ImageContainer {
+	margin-right: 10rem;
+}
+
+.ImageContainer img {
+	margin: 1rem;
+	border-radius: 10px;
+}
+
+.header {
+	margin: auto;
+}
+
+.header h2 {
+	margin-bottom: 20rem;
+}
+
+.header a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+}
