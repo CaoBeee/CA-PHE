@@ -2,8 +2,8 @@
 import ImageCarousel from '../components/carousel';
 import ShopGallery1 from "../components/shopGallery1";
 import ShopGallery2 from '../components/shopGallery2';
-import styles from "../styles/Menu.module.css";
-import buttons from "../styles/MenuButtons.module.css";
+import styles from "../styles/Shop.module.css";
+import buttons from "../styles/CategoryButtons.module.css";
 
 const Shop = () => {
     const [shop, setShop] = useState(0);

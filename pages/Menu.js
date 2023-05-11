@@ -3,7 +3,7 @@ import ImageCarousel from '../components/carousel';
 import MenuGallery from "../components/menuGallery";
 import MenuGallery2 from '../components/menuGallery2';
 import styles from "../styles/Menu.module.css";
-import buttons from "../styles/MenuButtons.module.css";
+import buttons from "../styles/CategoryButtons.module.css";
 
 const Menu = () => {
     const [Menu, setMenu] = useState(0);
