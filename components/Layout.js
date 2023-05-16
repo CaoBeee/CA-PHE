@@ -1,4 +1,4 @@
-import NavBar from '/components/NavBar'
+import NavBar from '/components/navBar'
 import Header from '/components/header'
 import Footer from '/components/footer'
 import headerStyles from '/styles/Header.module.css'
