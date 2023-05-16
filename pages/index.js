@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageCarousel from '../components/Carousel'
+import ImageCarousel from '../components/carousel'
 import styles from '../styles/Index.module.css'
 import InstagramBar from '../components/InstagramBar'
 import SeasonalItem from '../components/SeasonalItem'
