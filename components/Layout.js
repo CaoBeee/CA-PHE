@@ -1,6 +1,6 @@
-import NavBar from './navbar'
-import Header from './header'
-import Footer from './footer'
+import NavBar from './Navbar'
+import Header from './Header'
+import Footer from './Footer'
 import headerStyles from '../styles/Header.module.css'
 
 export default function Layout({ children }) {
