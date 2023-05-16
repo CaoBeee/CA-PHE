@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ImageCarousel from '../components/carousel'
-import MenuGallery from '../components/menuGallery'
+import MenuGallery from '../components/MenuGallery1'
 import MenuGallery2 from '../components/MenuGallery2'
 import styles from '../styles/Menu.module.css'
 import buttons from '../styles/CategoryButtons.module.css'
