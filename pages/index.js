@@ -2,7 +2,7 @@ import React from 'react'
 import ImageCarousel from '../components/carousel'
 import styles from '../styles/index.module.css'
 import InstagramBar from '../components/instagramBar'
-import SeasonalItem from '../components/seasonalItem'
+import SeasonalItem from '../components/SeasonalItem1'
 
 const LandingPage = () => {
 	const images = [
