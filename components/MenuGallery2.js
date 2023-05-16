@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Gallery.module.css'
+import styles from '../styles/gallery.module.css'
 
 export default function MenuGallery2() {
 	return (

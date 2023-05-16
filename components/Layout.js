@@ -1,4 +1,4 @@
-import NavBar from './Navbar'
+import NavBar from './NavBar'
 import Header from './Header'
 import Footer from './Footer'
 import headerStyles from '../styles/Header.module.css'
