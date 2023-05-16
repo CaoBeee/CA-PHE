@@ -1,15 +1,20 @@
 .header {
 	display: flex;
 	flex-direction: column;
-	top: 0;
 	width: 100vw;
 }
 
 .header img {
 	display: flex;
 	margin: auto;
-	height: 142px;
-	width: 511px;
+	height: 15.17094017094017vh;
+	width: 53.229166666666664vw;
+}
+
+@media (min-width: 1200px) {
+	.header {
+		padding-top: 0.5rem;
+	}
 }
 
 .header p {
