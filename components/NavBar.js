@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
 
 const NavBar = () => {
@@ -6,16 +7,16 @@ const NavBar = () => {
 		<React.Fragment>
 			<ul className={styles.navbar}>
 				<li>
-					<a href='/Menu'>Menu</a>
+					<Link href='/Menu'>Menu</Link>
 				</li>
 				<li>
-					<a href='/Shop'>Shop</a>
+					<Link href='/Shop'>Shop</Link>
 				</li>
 				<li>
-					<a href='/About'>About</a>
+					<Link href='/About'>About</Link>
 				</li>
 				<li>
-					<a href='/Contact'>Contact</a>
+					<Link href='/Contact'>Contact</Link>
 				</li>
 			</ul>
 		</React.Fragment>

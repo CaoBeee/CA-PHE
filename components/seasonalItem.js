@@ -1,6 +1,7 @@
 import React from 'react'
-import styles from '../styles/SeasonalItem.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import styles from '../styles/SeasonalItem.module.css'
 import seasonalOne from '../public/images/seasonal1.jpeg'
 import seasonalTwo from '../public/images/seasonal2.jpeg'
 
@@ -9,9 +10,9 @@ const SeasonalItem = () => {
 		<React.Fragment>
 			<div className={styles.Container}>
 				<div className={styles.header}>
-					<h2>This Season's Items</h2>
+					<h2>This Season&apos;s Items</h2>
 					<button>
-						<a href='/Menu'>Browse Menu</a>
+						<Link href='/Menu'>Browse Menu</Link>
 					</button>
 				</div>
 
