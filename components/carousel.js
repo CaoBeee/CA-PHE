@@ -7,8 +7,8 @@ ImageCarousel.propTypes = {
 	numSlides: PropTypes.number,
 	images: PropTypes.arrayOf(PropTypes.string),
 	alt: PropTypes.arrayOf(PropTypes.string),
-	caption: PropTypes.arrayOf(PropTypes.string),
-	body: PropTypes.arrayOf(PropTypes.string),
+	caption: PropTypes.arrayOf(PropTypes.object),
+	body: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default function ImageCarousel(props) {
