@@ -5,7 +5,7 @@ import InstagramLogo from '../public/images/InstagramLogo.png'
 import Draggable from 'react-draggable'
 
 const InstagramBar = () => {
-	const numImages = 50
+	const numImages = 20
 	const imagesArr = []
 	for (let i = 0; i < numImages; i++) {
 		imagesArr.push(
@@ -13,9 +13,9 @@ const InstagramBar = () => {
 				draggable='false'
 				className={styles.image}
 				src='/../public/images/coffee2.jpeg'
-				alt=''
-				width={257}
-				height={216}
+				alt='coffee'
+				width={300}
+				height={300}
 				key={i}
 			/>
 		)
@@ -37,7 +37,7 @@ const InstagramBar = () => {
 			</div>
 			<Draggable
 				axis='x'
-				bounds={{ right: 0, left: -(numImages - 1) * 100 }}
+				bounds={{ right: 0, left: -(numImages - 1) * 10 }}
 			>
 				<div className={styles.gallery}>{imagesArr}</div>
 			</Draggable>
