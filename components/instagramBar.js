@@ -3,6 +3,7 @@ import styles from '../styles/InstagramBar.module.css'
 import Image from 'next/image'
 import InstagramLogo from '../public/images/InstagramLogo.png'
 import Draggable from 'react-draggable'
+import coffee from '../public/images/coffee.jpeg'
 
 const InstagramBar = () => {
 	const numImages = 20
@@ -11,7 +12,7 @@ const InstagramBar = () => {
 		imagesArr.push(
 			<Image
 				draggable='false'
-				src='/../public/images/coffee2.jpeg'
+				src={coffee}
 				alt='coffee'
 				width={200}
 				height={200}

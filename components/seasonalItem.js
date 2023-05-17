@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../styles/SeasonalItem.module.css'
 import Image from 'next/image'
+import seasonalOne from '../public/images/seasonal1.jpeg'
+import seasonalTwo from '../public/images/seasonal2.jpeg'
 
 const SeasonalItem = () => {
 	return (
@@ -15,14 +17,14 @@ const SeasonalItem = () => {
 
 				<div className={styles.ImageContainer}>
 					<Image
-						src='/../public/images/seasonal1.jpeg'
-						alt=''
+						src={seasonalOne}
+						alt='seasonalItem'
 						width={464}
 						height={464}
 					/>
 					<Image
-						src='/../public/images/seasonal2.jpeg'
-						alt=''
+						src={seasonalTwo}
+						alt='seasonalItem'
 						width={464}
 						height={464}
 					/>
