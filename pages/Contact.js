@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../components/contact'
 import ContactForm from '../components/contactform'
-import Container from '../components/container'
+import Container from '../components/Container'
 
 const LandingPage = () => {
 	return (
