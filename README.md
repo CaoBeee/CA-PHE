@@ -87,7 +87,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [contributors-shield]: https://img.shields.io/github/contributors/caobeee/ca-phe.svg?style=for-the-badge
 [contributors-url]: https://github.com/CaoBeee/CA-PHE/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/caobeee/ca-phe.svg?style=for-the-badge
-[forks-url]: https://github.com/CaoBeee/ca-phe/network/members
+[forks-url]: https://github.com/CaoBeee/CA-PHE/network/members
 [stars-shield]: https://img.shields.io/github/stars/CaoBeee/ca-phe.svg?style=for-the-badge
 [stars-url]: https://github.com/CaoBeee/CA-PHE/stargazers
 [issues-shield]: https://img.shields.io/github/issues/CaoBeee/ca-phe.svg?style=for-the-badge
