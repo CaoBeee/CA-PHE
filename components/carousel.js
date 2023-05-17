@@ -1,11 +1,20 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import styles from '../styles/Carousel.module.css'
+import PropTypes from 'prop-types'
+
+ImageCarousel.propTypes = {
+	numSlides: PropTypes.number,
+	images: PropTypes.arrayOf(PropTypes.string),
+	alt: PropTypes.arrayOf(PropTypes.string),
+	caption: PropTypes.arrayOf(PropTypes.string),
+	body: PropTypes.arrayOf(PropTypes.string),
+}
 
 export default function ImageCarousel(props) {
 	const [index, setIndex] = useState(0)
 
-	const handleSelect = (selectedIndex, e) => {
+	const handleSelect = selectedIndex => {
 		setIndex(selectedIndex)
 	}
 

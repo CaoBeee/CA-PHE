@@ -3,7 +3,7 @@ import styles from '../styles/Contact.module.css'
 
 const Contact = () => {
 	return (
-		<div class={styles.contact}>
+		<div className={styles.contact}>
 			<h1>How you can contact us:</h1>
 			<p>
 				<span>Email:</span> exampleEmail@gmail.com

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import ImageCarousel from '../components/carousel'
-import MenuGallery from '../components/MenuGallery1'
-import MenuGallery2 from '../components/MenuGallery2'
 import styles from '../styles/Menu.module.css'
 import buttons from '../styles/CategoryButtons.module.css'
+import ImageCarousel from '../components/carousel'
+import MenuGallery1 from '../components/MenuGallery1'
+import MenuGallery2 from '../components/MenuGallery2'
 
 const Menu = () => {
 	const [Menu, setMenu] = useState(0)
@@ -20,34 +20,34 @@ const Menu = () => {
 		'An image depicting coconut iced coffee.',
 	]
 	const caption = [
-		<h3>Raspberry Blossom</h3>,
-		<h3>Traditional Vietnamese Coffee</h3>,
-		<h3>Coconut Iced Coffee</h3>,
+		<h3 key={1}>Raspberry Blossom</h3>,
+		<h3 key={2}>Traditional Vietnamese Coffee</h3>,
+		<h3 key={3}>Coconut Iced Coffee</h3>,
 	]
 	const body = [
-		<p>
+		<p key={1}>
 			Introducing our new seasonal spring coffee, bursting with bright and fresh flavors to awaken
 			your senses! This delightful brew features a light-bodied blend of premium Arabica beans
 			infused with the essence of sweet and tangy raspberry, complemented by subtle notes of creamy
 			vanilla and a hint of citrus. Sip on this refreshing coffee and savor the taste of spring in
 			every cup. Perfect for enjoying on a sunny day or to brighten up your morning routine.
 		</p>,
-		<p>
+		<p key={2}>
 			Transport yourself to the bustling streets of Vietnam with our authentic Robusta Vietnamese
 			coffee. Made with 100% Robusta beans, this bold brew is rich, intense, and packs a caffeine
 			punch to get you through the day. Served in the traditional Vietnamese style, with a stainless
 			steel filter and sweetened condensed milk, this coffee has a distinct flavor profile of dark
-			chocolate, caramel, and nutty undertones. Perfectly balanced and smooth, it's a true coffee
-			lover's delight. Come in and experience the bold taste of Vietnam with our Robusta Vietnamese
-			coffee.
+			chocolate, caramel, and nutty undertones. Perfectly balanced and smooth, it&apos;s a true
+			coffee lover&apos;s delight. Come in and experience the bold taste of Vietnam with our Robusta
+			Vietnamese coffee.
 		</p>,
-		<p>
+		<p key={3}>
 			Our Coconut Iced Coffee is a tropical twist on the classic Vietnamese iced coffee. We start
 			with our signature dark-roasted coffee and blend it with creamy coconut milk for a rich and
 			indulgent flavor. Served over ice, this refreshing drink is the perfect way to cool down on a
 			hot day. The sweetness of the coconut milk balances out the bitterness of the coffee, creating
-			a harmonious and delicious flavor profile. If you're a fan of coconut or just looking for a
-			new way to enjoy your iced coffee, give our Coconut Iced Coffee a try!
+			a harmonious and delicious flavor profile. If you&apos;re a fan of coconut or just looking for
+			a new way to enjoy your iced coffee, give our Coconut Iced Coffee a try!
 		</p>,
 	]
 	return (
@@ -64,7 +64,7 @@ const Menu = () => {
 					<button
 						id={buttons.all}
 						className={buttons.menu_button}
-						style={{ backgroundColor: (Menu == 0 && selectedColor) || notSelectedColor }}
+						style={{ backgroundColor: (Menu === 0 && selectedColor) || notSelectedColor }}
 						onClick={() => {
 							setMenu(0)
 						}}
@@ -75,7 +75,7 @@ const Menu = () => {
 					<button
 						id={buttons.coffee}
 						className={buttons.menu_button}
-						style={{ backgroundColor: (Menu == 1 && selectedColor) || notSelectedColor }}
+						style={{ backgroundColor: (Menu === 1 && selectedColor) || notSelectedColor }}
 						onClick={() => {
 							setMenu(1)
 						}}
@@ -86,7 +86,7 @@ const Menu = () => {
 					<button
 						id={buttons.seasonal}
 						className={buttons.menu_button}
-						style={{ backgroundColor: (Menu == 2 && selectedColor) || notSelectedColor }}
+						style={{ backgroundColor: (Menu === 2 && selectedColor) || notSelectedColor }}
 						onClick={() => {
 							setMenu(2)
 						}}
@@ -98,7 +98,7 @@ const Menu = () => {
 					<button
 						id={buttons.tea}
 						className={buttons.menu_button}
-						style={{ backgroundColor: (Menu == 3 && selectedColor) || notSelectedColor }}
+						style={{ backgroundColor: (Menu === 3 && selectedColor) || notSelectedColor }}
 						onClick={() => {
 							setMenu(3)
 						}}
@@ -109,7 +109,7 @@ const Menu = () => {
 					<button
 						id={buttons.milk_tea}
 						className={buttons.menu_button}
-						style={{ backgroundColor: (Menu == 4 && selectedColor) || notSelectedColor }}
+						style={{ backgroundColor: (Menu === 4 && selectedColor) || notSelectedColor }}
 						onClick={() => {
 							setMenu(4)
 						}}
@@ -120,7 +120,7 @@ const Menu = () => {
 					<button
 						id={buttons.other}
 						className={buttons.menu_button}
-						style={{ backgroundColor: (Menu == 5 && selectedColor) || notSelectedColor }}
+						style={{ backgroundColor: (Menu === 5 && selectedColor) || notSelectedColor }}
 						onClick={() => {
 							setMenu(5)
 						}}
@@ -129,12 +129,12 @@ const Menu = () => {
 					</button>
 				</div>
 			</div>
-			{Menu == 0 && <MenuGallery />}
-			{Menu == 1 && <MenuGallery2 />}
-			{Menu == 2 && <MenuGallery />}
-			{Menu == 3 && <MenuGallery2 />}
-			{Menu == 4 && <MenuGallery />}
-			{Menu == 5 && <MenuGallery2 />}
+			{Menu === 0 && <MenuGallery1 />}
+			{Menu === 1 && <MenuGallery2 />}
+			{Menu === 2 && <MenuGallery1 />}
+			{Menu === 3 && <MenuGallery2 />}
+			{Menu === 4 && <MenuGallery1 />}
+			{Menu === 5 && <MenuGallery2 />}
 		</div>
 	)
 }
