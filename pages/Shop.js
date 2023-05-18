@@ -19,43 +19,12 @@ const Shop = () => {
 		'An image depicting traditionally brewed Vietnamese Coffee.',
 		'An image depicting coconut iced coffee.',
 	]
-	const caption = [
-		<h3 key={1}>Cat Number 1</h3>,
-		<h3 key={2}>Cat Number 2</h3>,
-		<h3 key={3}>Cat Number 3</h3>,
-	]
-	const body = [
-		<p key={1}>
-			Oh, where do I even begin? Cats are simply amazing creatures. They are graceful, elegant, and
-			mysterious. From their gorgeous fur to their piercing eyes, everything about them is
-			fascinating. One of the best things about cats is their independence. They are perfectly
-			content to spend time alone, grooming themselves or napping in a sunny spot. But at the same
-			time, they are also capable of being incredibly affectionate and loving. There&apos;s nothing
-			quite like the feeling of a soft, purring cat curled up on your lap.
-		</p>,
-		<p key={2}>
-			Another thing I love about cats is their playful nature. Whether they&apos;re chasing a toy or
-			stalking a piece of string, watching a cat play is endlessly entertaining. And let&apos;s not
-			forget about their incredible agility and acrobatic skills. Seeing a cat leap effortlessly
-			onto a high surface or contort their body in impossible ways is truly a sight to behold.
-		</p>,
-		<p key={3}>
-			Cats are also incredibly intelligent and perceptive. They have a keen sense of observation and
-			can pick up on subtle cues and changes in their environment. And while they may seem aloof at
-			times, they are actually very attuned to their owners&apos; emotions and can be incredibly
-			comforting in times of stress or sadness. Overall, cats are truly magnificent creatures that
-			bring joy, comfort, and entertainment into our lives. They are truly deserving of all the love
-			and adoration that we give them.
-		</p>,
-	]
 	return (
 		<div className={styles.container}>
 			<ImageCarousel
 				numSlides={3}
 				images={images}
 				alt={alt}
-				caption={caption}
-				body={body}
 			/>
 			<div className={buttons.container}>
 				<div>

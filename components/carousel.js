@@ -31,10 +31,6 @@ export default function ImageCarousel(props) {
 					src={props.images[i]}
 					alt={props.alt[i]}
 				/>
-				<Carousel.Caption className={styles.caption}>
-					{props.caption[i]}
-					{props.body[i]}
-				</Carousel.Caption>
 			</Carousel.Item>
 		)
 	}
