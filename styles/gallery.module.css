@@ -5,13 +5,18 @@
     height: fit-content;
     width: 100vw;
     gap: 5em;
+    padding-right: 1em;
+    padding-left:1em;
     justify-content: space-evenly;
     vertical-align: top;
 }
 
 .gallery_item {
     margin-top:0;
+    margin-left:auto;
+    margin-right:auto;
     display: flex;
+    width:fit-content;
     flex-direction: column;
     transition: all 0.4s linear;
     vertical-align:top;
@@ -35,6 +40,8 @@
             vertical-align:top;
             height: 464px;
             width: 464px;
+            max-width: 85vw;
+            min-width: 27vw;
             object-fit: cover;
             vertical-align: middle;
             border-radius: 30px;
@@ -42,9 +49,22 @@
 
     .gallery_item p {
         color: black;
+        margin:auto;
         margin-top: 1em;
         height: fit-content;
         width: 464px;
-        font-size: 20px;
+        max-width: 80vw;
+        min-width: 27vw;
+        font-size: 22px;
         text-align: center;
     }
+
+@media(max-width: 1000px){
+    .gallery_item a img{
+        height:320px;
+        width: 320px;
+    }
+    .gallery_item p{
+        width: 320px;
+    }
+}

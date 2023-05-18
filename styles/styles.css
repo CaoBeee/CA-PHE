@@ -33,7 +33,7 @@ body {
 	top: 45%;
 	bottom: 45%;
 	width: 5em;
-	right: 2em;
+	right: 0em;
 }
 
 .carousel-control-next-icon {
@@ -44,7 +44,7 @@ body {
 	top: 45%;
 	bottom: 45%;
 	width: 5em;
-	right: 2em;
+	right: 0em;
 }
 
 .carousel-control-prev-icon {

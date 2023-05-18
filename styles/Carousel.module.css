@@ -1,35 +1,39 @@
 .carousel {
     text-align: center;
     width: 100vw;
-    height: 95vh;
+    height: fit-content;
     margin: auto;
 }
 
 .carouselImage {
     margin: 0 auto;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
+    min-height: 50vh;
     object-fit: cover;
 }
 
-.carouselItem div {
-    position: absolute;
-    background-color: rgba(140, 100, 110, 0.5);
-    height: fit-content;
-    width: 25%;
-    border-radius: 1.25em;
-    top: 25%;
-    left: 10%;
+@media(max-width: 1920px){
+    .caption h3{
+        font-size: 28px;
+    }
+    .caption p{
+        font-size: 22px;
+    }
 }
 
-.caption h3 {
-    color:white;
-    font-size: 28px;
+@media(max-width:1200px){
+    .carouselImage{
+        height:auto;
+    }
 }
 
-.caption p{
-    color: white;
-    font-size: 20px;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
+    @media(max-width: 600px) {
+        .caption h3 {
+            font-size: 16px;
+        }
+
+        .caption p {
+            font-size: 12px;
+        }
+    }

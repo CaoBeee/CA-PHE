@@ -5,7 +5,7 @@
     height:fit-content;
     flex-wrap: wrap;
     gap: 0.5em;
-    margin-left: 7.5vw;
+    margin-left: 5vw;
     margin-bottom: 2em;
     margin-top: 2em;
 }
@@ -30,4 +30,11 @@
 .menu_button:hover{
     filter:brightness(1.2);
     text-decoration:underline;
+}
+
+@media(max-width: 1366px){
+    .container{
+        margin-left: auto;
+        margin-right:auto;
+    }
 }
