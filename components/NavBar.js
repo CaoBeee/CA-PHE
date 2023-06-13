@@ -1,11 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
+import Header from './Header'
 
-const NavBar = () => {
+const NavBar = ({ isSticky }) => {
+	const navbarClasses = `${styles.navbar} ${isSticky ? styles.navbarScrolled : styles.navbar}`
+
+	const stickyImg = () => {
+		return	<Header />
+	}
 	return (
 		<>
-			<ul className={styles.navbar}>
+		<nav className={navbarClasses}>
+				<ul>
+					{isSticky ? stickyImg() : ''}
 				<li>
 					<Link href='/Menu'>Menu</Link>
 				</li>
@@ -19,6 +27,7 @@ const NavBar = () => {
 					<Link href='/Contact'>Contact</Link>
 				</li>
 			</ul>
+		</nav>
 		</>
 	)
 }
