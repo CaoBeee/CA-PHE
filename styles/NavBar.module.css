@@ -2,13 +2,14 @@
 	color: black;
 	text-align: center;
 	width: 100vw;
+	transition: top 0.3s ease;
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
 	.navbar {
 		margin-top: 2rem;
 	}
-} */
+}
 
 .navbar li {
 	list-style-type: none;
@@ -28,4 +29,38 @@
 	width: 10rem;
 	margin-top: 0.875rem;
 	margin-right: 1rem;
+}
+
+.navbarScrolled {
+	background: linear-gradient(180deg, #adc178 10.85%, white);
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 999;
+}
+
+.navbarScrolled > ul > a:first-child {
+	width: 21vw;
+	margin-left: -50px;
+	margin-right: 320px;
+}
+
+.navbarScrolled img,
+.navbarScrolled > a:first-child {
+	vertical-align: middle;
+	margin-top: -10px;
+	margin-bottom: -14px;
+	width: 100%;
+	height: auto;
+}
+
+.navbarScrolled li {
+	margin-bottom: -5px;
+	vertical-align: bottom;
+}
+
+.navbarScrolled li > a {
+	margin: auto;
+	font-size: 1rem;
+	width: 100px;
 }
