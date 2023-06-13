@@ -1,19 +1,26 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
-import Header from './Header'
+import logo from '../public/images/logo_caphe-01.svg'
+import Image from 'next/image'
 
 const NavBar = ({ isSticky }) => {
 	const navbarClasses = `${styles.navbar} ${isSticky ? styles.navbarScrolled : styles.navbar}`
 
 	const stickyImg = () => {
-		return	<Header />
+		return (
+			<Link href={'/'}>
+				<Image
+					src={logo}
+					alt='Logo'
+				/>
+			</Link>)
 	}
 	return (
 		<>
-		<nav className={navbarClasses}>
+			<nav className={navbarClasses}>
+				{isSticky ? stickyImg() : ''} 
 				<ul>
-					{isSticky ? stickyImg() : ''}
 				<li>
 					<Link href='/Menu'>Menu</Link>
 				</li>
