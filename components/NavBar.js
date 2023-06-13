@@ -4,7 +4,7 @@ import styles from '../styles/NavBar.module.css'
 
 const NavBar = () => {
 	return (
-		<React.Fragment>
+		<>
 			<ul className={styles.navbar}>
 				<li>
 					<Link href='/Menu'>Menu</Link>
@@ -19,7 +19,7 @@ const NavBar = () => {
 					<Link href='/Contact'>Contact</Link>
 				</li>
 			</ul>
-		</React.Fragment>
+		</>
 	)
 }
 

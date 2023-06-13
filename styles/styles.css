@@ -1,6 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Reset all default styles */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 :root {
 	--logo-color1: rgb(167, 149, 131);
 	--background-color1: rgb(250, 249, 247);
@@ -10,15 +19,6 @@
 
 body {
 	overflow-x: hidden;
-}
-
-/* Reset all default styles */
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 }
 
 .carousel-indicators [data-bs-target] {

@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar.js'
 import Header from './Header.js'
 import Footer from './Footer.js'
-import headerStyles from '/styles/Header.module.css'
+import styles from '../styles/Header.module.css'
 import PropTypes from 'prop-types'
 
 Layout.propTypes = {
@@ -12,12 +12,10 @@ Layout.propTypes = {
 export default function Layout({ children }) {
 	return (
 		<>
-			<div className={headerStyles.headerBG}>
-				<div className={headerStyles.header}>
+			<header className={styles.header}>
 					<Header />
 					<NavBar />
-				</div>
-			</div>
+			</header>
 			<main>{children}</main>
 			<div>
 				<Footer />

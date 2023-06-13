@@ -4,11 +4,11 @@
 	width: 100vw;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 	.navbar {
 		margin-top: 2rem;
 	}
-}
+} */
 
 .navbar li {
 	list-style-type: none;
