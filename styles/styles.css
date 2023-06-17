@@ -2,6 +2,11 @@
 /* CSS Document */
 
 /* Reset all default styles */
+@font-face {
+	font-family: 'Lora';
+	src: url('../public/fonts/Lora-VariableFont_wght.ttf');
+}
+
 *,
 *::before,
 *::after {
@@ -19,6 +24,7 @@
 
 body {
 	overflow-x: hidden;
+	background-color: #EEE5E9;
 }
 
 .carousel-indicators [data-bs-target] {

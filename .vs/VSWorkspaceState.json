@@ -3,8 +3,10 @@
     "",
     "\\components",
     "\\pages",
+    "\\public",
+    "\\public\\images",
     "\\styles"
   ],
-  "SelectedNode": "\\components\\Layout.js",
+  "SelectedNode": "\\components\\menuMilkTea.js",
   "PreviewInSolutionExplorer": false
 }

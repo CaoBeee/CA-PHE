@@ -1,3 +1,101 @@
 .container {
-    background-color: #F5F5F5;
+    font-family: 'Lora';
+}
+
+.image_container {
+    display: flex;
+    width: 100vw;
+    height: 37.5em;
+    object-fit: contain;
+}
+
+    .image_container p {
+        position: absolute;
+        font-size: 6.25em;
+        color: white;
+        top: 3em;
+        left: 2em;
+    }
+
+    .image_container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0px -31.25em;
+    }
+
+.buttons_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_legend {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: fit-content;
+    padding: 1em;
+    position: absolute;
+    left: 1.25em;
+    gap: 3.75em;
+}
+
+.legend_item {
+    display: flex;
+    flex-direction: row;
+}
+
+    .legend_item img {
+        width: 3.125em;
+        height: 3.125em;
+    }
+
+    .legend_item span {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.375em;
+        line-height: 1.875em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 1.25em;
+    }
+
+.menu_item_container {
+    --mask: radial-gradient(14.0625em at calc(100% - 18.75em) 50%,#000 99%,#0000 101%) 0 calc(50% - 200px)/100% 25em, radial-gradient(14.0625em at calc(100% + 12.5em) 50%,#0000 99%,#000 101%) calc(100% - 6.25em) 50%/100% 25em repeat-y;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    height: fit-content;
+    min-height: 80vh;
+    margin-left: 18.75em;
+    margin-right: auto;
+    width: 87.5em;
+    padding-bottom: 3.125em;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    border-bottom: 2px solid black;
+    margin-left: 3.75em;
+}
+
+    .menu_header h2 {
+        margin-top: 1.5em;
+    }
+
+#menu_title {
+    margin-left: 3em;
+}
+
+#calories {
+    margin-left: auto;
+    margin-right: 7.25em;
 }
