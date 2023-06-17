@@ -11,10 +11,10 @@
 
     .image_container p {
         position: absolute;
-        font-size: 84px;
+        font-size: 6.25em;
         color: white;
-        top: 18.75em;
-        left: 9.375em;
+        top: 3em;
+        left: 2em;
     }
 
     .image_container img {
@@ -88,7 +88,7 @@
 }
 
     .menu_header h2 {
-        margin-top: 2.5em;
+        margin-top: 1.5em;
     }
 
 #menu_title {
