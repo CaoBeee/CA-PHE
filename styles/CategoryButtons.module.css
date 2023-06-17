@@ -1,13 +1,15 @@
 ﻿.container{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     width: fit-content;
     height:fit-content;
     flex-wrap: wrap;
-    gap: 0.5em;
-    margin-left: 5vw;
+    gap: 60px;
+    margin-left: auto;
+    margin-right:auto;
     margin-bottom: 2em;
     margin-top: 2em;
+    justify-content:center;
 }
 
 .container div{
@@ -17,19 +19,14 @@
 }
 
 .menu_button {
-    width: 6em;
+    width: 8em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.4s linear; 
-}
-
-.menu_button:hover{
-    filter:brightness(1.2);
-    text-decoration:underline;
 }
 
 @media(max-width: 1366px){
