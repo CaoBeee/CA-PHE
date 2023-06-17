@@ -5,7 +5,7 @@
 .image_container {
     display: flex;
     width: 100vw;
-    height: 600px;
+    height: 37.5em;
     object-fit: contain;
 }
 
@@ -13,15 +13,15 @@
         position: absolute;
         font-size: 84px;
         color: white;
-        top: 300px;
-        left: 150px;
+        top: 18.75em;
+        left: 9.375em;
     }
 
     .image_container img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: 0px -500px;
+        object-position: 0px -31.25em;
     }
 
 .buttons_container {
@@ -39,10 +39,10 @@
     flex-direction: column;
     border: 2px solid black;
     height: fit-content;
-    padding: 20px;
+    padding: 1em;
     position: absolute;
-    left: 20px;
-    gap: 60px;
+    left: 1.25em;
+    gap: 3.75em;
 }
 
 .legend_item {
@@ -51,32 +51,32 @@
 }
 
     .legend_item img {
-        width: 50px;
-        height: 50px;
+        width: 3.125em;
+        height: 3.125em;
     }
 
     .legend_item span {
         font-family: 'Lora';
         font-style: normal;
         font-weight: 500;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.375em;
+        line-height: 1.875em;
         display: flex;
         align-items: center;
         text-align: center;
-        margin-left: 20px;
+        margin-left: 1.25em;
     }
 
 .menu_item_container {
-    --mask: radial-gradient(223.61px at calc(100% - 300.00px) 50%,#000 99%,#0000 101%) 0 calc(50% - 200px)/100% 400px, radial-gradient(223.61px at calc(100% + 200.00px) 50%,#0000 99%,#000 101%) calc(100% - 100px) 50%/100% 400px repeat-y;
+    --mask: radial-gradient(14.0625em at calc(100% - 18.75em) 50%,#000 99%,#0000 101%) 0 calc(50% - 200px)/100% 25em, radial-gradient(14.0625em at calc(100% + 12.5em) 50%,#0000 99%,#000 101%) calc(100% - 6.25em) 50%/100% 25em repeat-y;
     -webkit-mask: var(--mask);
     mask: var(--mask);
     height: fit-content;
     min-height: 80vh;
-    margin-left: 300px;
+    margin-left: 18.75em;
     margin-right: auto;
-    width: 1400px;
-    padding-bottom: 50px;
+    width: 87.5em;
+    padding-bottom: 3.125em;
 }
 
 .menu_header {
@@ -84,18 +84,18 @@
     flex-direction: row;
     width: 85%;
     border-bottom: 2px solid black;
-    margin-left: 60px;
+    margin-left: 3.75em;
 }
 
     .menu_header h2 {
-        margin-top: 40px;
+        margin-top: 2.5em;
     }
 
 #menu_title {
-    margin-left: 100px;
+    margin-left: 3em;
 }
 
 #calories {
     margin-left: auto;
-    margin-right: 200px;
+    margin-right: 7.25em;
 }

@@ -1,18 +1,18 @@
-.container{
+.container {
     width: 85%;
-    margin-top: 16px;
-    margin-left: 130px;
-    font-family:'Lora';
-    display:flex;
-    height:fit-content;
+    margin-top: 1em;
+    margin-left: 8.125em;
+    font-family: 'Lora';
+    display: flex;
+    height: fit-content;
 }
 
 .item_image {
-    width: 175px;
-    height: 250px;
+    width: 10.9375em;
+    height: 15.625em;
     object-fit: cover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    border-radius: 1.25em;
     transition: all .3s ease-in;
 }
 
@@ -25,16 +25,16 @@
     display: flex;
     align-items: center;
     text-align: center;
-    height:fit-content;
+    height: fit-content;
     letter-spacing: 0.05em;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
-    margin-left: 80px;
+    font-size: 1.5em;
+    line-height: 1.9375em;
+    margin-left: 5em;
     transition: all .3s linear;
-    margin-top:auto;
-    margin-bottom:auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .name:hover{
@@ -43,29 +43,29 @@
 }
 
 .calories {
-    display:flex;
+    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 1.5em;
+    line-height: 1.9375em;
     margin-left: auto;
-    margin-right: 55px;
+    margin-right: 3.4375em;
 }
 
 .icon_container {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right:70px;
-    gap: 16px;
-    width: 180px;
-    justify-content:center;
+    margin-right: 4.375em;
+    gap: 1em;
+    width: 11.25em;
+    justify-content: center;
 }
 
-.icon{
-    height:50px;
-    width:50px;
+.icon {
+    height: 3.125em;
+    width: 3.125em;
 }
