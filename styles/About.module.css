@@ -1,89 +1,175 @@
 .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
-    margin-left: 4em;
-    margin-right: 4em;
+    padding-right: 4em;
     font-size: 18px;
     min-height: 70vh;
 }
 
-.container p{
-    margin-bottom: 2em;
-}
-
-.table_of_contents{
-    margin-right: 4em;
-    margin-bottom: 4em;
-    position:relative;
-    border-radius: 30px;
-    display:flex;
-    flex-direction:column;
-    background-color: #cccccc;
-    height:fit-content;
-    width: fit-content;
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 5em;
-    float:left;
-}
-
-.table_of_contents a {
-    color: black;
-    text-decoration: none;
-}
-
-
-.table_of_contents h3{
-}
-
-.table_of_contents text{
-    margin-left: 1em;
-    margin-bottom: 0.25em;
-}
-
-.main_header {
-    display: flex;
-    position: relative;
-    background-color: grey;
-    align-self: center;
-    width: 70%;
-    margin-bottom: 1em;
-    left: 2em;
-    border-radius: 20px;
-}
-
-.main_header h2{
-    margin: 0.75em;
-    color: white;
-}
-
-.background_block {
-    position: absolute;
-    background-color: #aaaaaa;
+.first_block {
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    right: 2em;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 9em;
 }
 
-@media(max-width: 600px){
-    .container{
-        margin-left: 1em;
-        margin-right: 1em;
+    .first_block h1 {
+        color: white;
+        background-color: #393939;
+        border-radius: 10px;
+        width: 872px;
+        height: 124px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 51px;
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        margin-left: 3em;
     }
-    .table_of_contents{
-        margin-left:auto;
-        margin-right:auto;
-        padding-right: 2em;
 
-        float:none;
-    }
-    .main_header{
-        margin-left:auto;
-        margin-right:auto;
-        left:0;
-        text-align:center;
-    }
+.first_block_body {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    width: 872px;
+    height: fit-content;
+    margin-top: 1em;
+    margin-left: 5.5em;
 }
+
+.first_block_foot {
+    display: flex;
+    width: fit-content;
+    height: 155px;
+    text-align: center;
+    margin-left: 5.5em;
+}
+
+#thirty {
+    font-family: 'Inspiration';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 163px;
+    color: #788264;
+    margin-right: 0.15em;
+}
+
+#years {
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+}
+
+
+.second_block {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(95.13deg, #FFFBFF 0%, #ADC178 100%);
+}
+
+    .second_block p {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        width: 730px;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .second_block img {
+        margin-right: auto;
+    }
+
+.third_block {
+    width: 100vw;
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.third_block_body {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 924px;
+    height: 242px;
+    margin-left: 4em;
+}
+
+    .third_block_body p {
+        position: relative;
+        color: #272B2D;
+    }
+
+    .third_block_body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../public/images/coffee_beans1.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #313638;
+        border-radius: 10px;
+        box-shadow: inset 0 0 0 1000px rgba(173, 153, 132, 0.8);
+    }
+
+.third_block a {
+    background-color: #ADC178;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    color: #313638;
+    margin-left: 10em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin:auto;
+    width: 261px;
+    height: 84px;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition: 0.3s all ease-in-out;
+}
+
+    .third_block a button {
+        background-color: #ADC178;
+        border: none;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .third_block a:hover {
+        background-color: #788264;
+    }
+
+    .third_block a:hover > button {
+        background-color: #788264;
+    }
