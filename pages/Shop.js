@@ -1,109 +1,183 @@
-import React, { useState } from 'react'
-import ImageCarousel from '../components/carousel'
-import ShopGallery1 from '../components/shopGallery1'
-import ShopGallery2 from '../components/shopGallery2'
+import React, { useMemo, useState } from 'react'
+import ShopItem from '../components/shopItem'
+import Image from 'next/image';
+import Hero from '../public/images/Shop Hero.png';
+import shirt from '../public/images/shirt.png';
+import sweatshirt from '../public/images/sweatshirt.png';
+import sweatshirtGray from '../public/images/sweatshirt-heathergray.png';
+import sweatshirt2 from '../public/images/sweatshirt2.png';
+import longsleeve from '../public/images/longsleeve-white.png';
+import longsleeve2 from '../public/images/longsleeve-white2.png';
 import styles from '../styles/Shop.module.css'
 import buttons from '../styles/CategoryButtons.module.css'
 
 const Shop = () => {
-	const [shop, setShop] = useState(0)
-	const selectedColor = '#788264'
-	const notSelectedColor = '#ADC178'
-	const images = [
-		'https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=675%2Cq=85%2Cwidth=1200/wp-content/uploads/international-cat-day1-scaled.jpg',
-		'https://media.cnn.com/api/v1/images/stellar/prod/230426141158-sand-cat-9.jpg?c=original&q=w_1280,c_fill',
-		'https://penntoday.upenn.edu/sites/default/files/2022-03/Cat-COVID-social.jpeg',
-	]
-	const alt = [
-		'An image showing our new "Rapspberry Blossom" seasonal spring coffee.',
-		'An image depicting traditionally brewed Vietnamese Coffee.',
-		'An image depicting coconut iced coffee.',
-	]
-	return (
-		<div className={styles.container}>
-			<ImageCarousel
-				numSlides={3}
-				images={images}
-				alt={alt}
-			/>
-			<div className={buttons.container}>
-				<div>
-					<button
-						id={buttons.all}
-						className={buttons.menu_button}
-						style={{ backgroundColor: (shop === 0 && selectedColor) || notSelectedColor }}
-						onClick={() => {
-							setShop(0)
-						}}
-					>
-						All
-					</button>
+    const [shop, setShop] = useState(0)
+    const [hovered, setHovered] = useState(-1)
+    const selectedColor = '#788264'
+    const notSelectedColor = '#ADC178'
+    const itemList = [
+        <ShopItem picture={shirt} name="Test1 (Shirt)" price="$19.99" category="shirt" />,
+        <ShopItem picture={sweatshirt} name="Test2 (Top)" price="$19.99" category="top" />,
+        <ShopItem picture={sweatshirtGray} name="Test3 (Jacket)" price="$19.99" category="jacket" />,
+        <ShopItem picture={sweatshirt2} name="Test4 (Long Sleeve)" price="$19.99" category="long" />,
+        <ShopItem picture={longsleeve} name="Test5 (Pants)" price="$19.99" category="pant" />,
+        <ShopItem picture={longsleeve2} name="Test6 (Shoes)" price="$19.99" category="shoe" />,
+    ]
 
-					<button
-						id={buttons.coffee}
-						className={buttons.menu_button}
-						style={{ backgroundColor: (shop === 1 && selectedColor) || notSelectedColor }}
-						onClick={() => {
-							setShop(1)
-						}}
-					>
-						Outerwear
-					</button>
+    const shopItems = useMemo(() => {
+        switch (shop) {
+            case 0:
+                return itemList;
+            case 1:
+                return itemList.filter(item => item.props.category === 'shirt');
+            case 2:
+                return itemList.filter(item => item.props.category === 'top');
+            case 3:
+                return itemList.filter(item => item.props.category === 'jacket');
+            case 4:
+                return itemList.filter(item => item.props.category === 'long');
+            case 5:
+                return itemList.filter(item => item.props.category === 'pant');
+            case 6:
+                return itemList.filter(item => item.props.category === 'shoe');
+            default:
+                return itemList;
+        }
+    }, [shop, itemList]);
+    return (
+        <div className={styles.container}>
+            <div className={styles.hero_container}>
+                <Image src={Hero} />
+            </div>
+            <div className={buttons.shop_container}>
+                <div>
+                    <button
+                        id={buttons.all}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 0 && selectedColor) || notSelectedColor, filter: (hovered === 0 && shop !== 0 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(0)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(0)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        All
+                    </button>
 
-					<button
-						id={buttons.seasonal}
-						className={buttons.menu_button}
-						style={{ backgroundColor: (shop === 2 && selectedColor) || notSelectedColor }}
-						onClick={() => {
-							setShop(2)
-						}}
-					>
-						Shorts
-					</button>
-				</div>
-				<div>
-					<button
-						id={buttons.tea}
-						className={buttons.menu_button}
-						style={{ backgroundColor: (shop === 3 && selectedColor) || notSelectedColor }}
-						onClick={() => {
-							setShop(3)
-						}}
-					>
-						Tops
-					</button>
+                    <button
+                        id={buttons.shirts}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 1 && selectedColor) || notSelectedColor, filter: (hovered === 1 && shop !== 1 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(1)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(1)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        Shirts
+                    </button>
 
-					<button
-						id={buttons.milk_tea}
-						className={buttons.menu_button}
-						style={{ backgroundColor: (shop === 4 && selectedColor) || notSelectedColor }}
-						onClick={() => {
-							setShop(4)
-						}}
-					>
-						Shoes
-					</button>
+                    <button
+                        id={buttons.tops}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 2 && selectedColor) || notSelectedColor, filter: (hovered === 2 && shop !== 2 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(2)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(2)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        Tops
+                    </button>
 
-					<button
-						id={buttons.other}
-						className={buttons.menu_button}
-						style={{ backgroundColor: (shop === 5 && selectedColor) || notSelectedColor }}
-						onClick={() => {
-							setShop(5)
-						}}
-					>
-						Pants
-					</button>
-				</div>
-			</div>
-			{shop === 0 && <ShopGallery1 />}
-			{shop === 1 && <ShopGallery2 />}
-			{shop === 2 && <ShopGallery1 />}
-			{shop === 3 && <ShopGallery2 />}
-			{shop === 4 && <ShopGallery1 />}
-			{shop === 5 && <ShopGallery2 />}
-		</div>
-	)
+                    <button
+                        id={buttons.jackets}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 3 && selectedColor) || notSelectedColor, filter: (hovered === 3 && shop !== 3 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(3)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(3)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        Jackets
+                    </button>
+                </div>
+                <div>
+                    <button
+                        id={buttons.sleeves}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 4 && selectedColor) || notSelectedColor, filter: (hovered === 4 && shop !== 4 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(4)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(4)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        Long Sleeves
+                    </button>
+
+                    <button
+                        id={buttons.pants}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 5 && selectedColor) || notSelectedColor, filter: (hovered === 5 && shop !== 5 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(5)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(5)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        Pants
+                    </button>
+
+                    <button
+                        id={buttons.shoes}
+                        className={buttons.shop_button}
+                        style={{ backgroundColor: (shop === 6 && selectedColor) || notSelectedColor, filter: (hovered === 6 && shop !== 6 && 'brightness(0.8)') || 'brightness(1)' }}
+                        onClick={() => {
+                            setShop(6)
+                        }}
+                        onMouseEnter={() => {
+                            setHovered(6)
+                        }}
+                        onMouseLeave={() => {
+                            setHovered(-1)
+                        }}
+                    >
+                        Shoes
+                    </button>
+                </div>
+            </div>
+            <div className={styles.item_container}>
+                {shopItems }
+            </div>
+        </div>
+    )
 }
 
 export default Shop
