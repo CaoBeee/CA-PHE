@@ -24,7 +24,7 @@ const Menu = () => {
                 <p>Our Drinks</p>
                 <Image src={coffee} />
             </div>
-            <div className={buttons.container}>
+            <div className={buttons.menu_container}>
                 <button
                     id={buttons.seasonal}
                     className={buttons.menu_button}

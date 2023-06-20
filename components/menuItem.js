@@ -8,7 +8,7 @@ import styles from '../styles/MenuItem.module.css'
 export default function MenuItem({item_image, name, calories, recommended, cold, hot }) {
 	return (
 		<div className={styles.container}>
-			<Image className={styles.item_image} src={item_image }/>
+			<Image className={styles.item_image} src={item_image} />
 			<span className={styles.name}>{name}</span>
 			<span className={styles.calories}>{calories}</span>
 			<div className={styles.icon_container}>
@@ -17,5 +17,5 @@ export default function MenuItem({item_image, name, calories, recommended, cold,
 				{hot && <Image className={styles.icon} src={hotIcon} />}
 			</div>
 		</div>
-		)
+	);
 }
