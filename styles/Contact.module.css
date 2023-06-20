@@ -1,9 +1,28 @@
 .contact h1 {
+	font-family:"Quicksand";
 	padding: 5px 0px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+}
+
+#form_header {
+	margin-left: 11em;
+}
+
+.contact {
+	padding-top: 5em;
+	margin-right: 4em;
+	min-height: 75vh;
 }
 
 .contact p {
-	padding: 5px 0px;
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .contact span {
@@ -11,18 +30,21 @@
 }
 
 .contact form {
-	width: 40%;
+	width: fit-content;
 }
 
 .contact fieldset {
 	border: none;
 }
 
-.contact input:not(textarea) {
-	width: 30em;
-	padding: 5px;
-	margin: 4px 0px;
-}
+	.contact input:not(textarea) {
+		width: 60em;
+		padding: 0.5em;
+		background: none;
+		margin-bottom: -1em;
+		margin-left: 22em;
+		border: 1px solid black;
+	}
 
 .contact input[type='textarea'] {
 	height: 10em;
@@ -32,26 +54,26 @@
 .contact input[type='textarea']::placeholder {
 	position: relative;
 	white-space: pre-line;
-	top: -50px;
 }
 
-.contact textarea {
-	height: 10em;
-	width: 30em;
-	padding: 4px;
-}
+	.contact textarea {
+		height: 10em;
+		width: 60em;
+		background: none;
+		border: 1px solid black;
+		padding: 0.5em;
+		margin-left: 22em;
+	}
 
 
 .contact input[type='textarea']:-ms-input-placeholder {
 	position: relative;
 	white-space: pre-line;
-	top: -50px;
 }
 
 .contact input[type='textarea']::-webkit-input-placeholder {
 	position: relative;
 	white-space: pre-line;
-	top: -50px;
 }
 
 .contact input[type='textarea']::selection {
@@ -63,4 +85,30 @@
 	float: right;
 	width: 8em;
 	border-radius: 10px;
+	background-color: #ADC178;
+	font-family: 'Quicksand';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	transition: all 0.3s ease-in;
+}
+
+	.contact input[type='submit']:hover {
+		filter: brightness(0.85);
+	}
+
+#green{
+	position:absolute;
+	left:-6em;
+	bottom:11em;
+	z-index:-1;
+	transform: scale(1);
+}
+
+#brown {
+	position: absolute;
+	z-index: -1;
+	transform: scale(1);
+	right:-1em;
+	bottom: -7em;
 }
