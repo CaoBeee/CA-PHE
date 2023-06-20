@@ -4,7 +4,7 @@ import styles from '../styles/Contact.module.css'
 const ContactForm = () => {
 	return (
 		<div className={styles.contact}>
-			<h1>Want to let us know something about the store?</h1>
+			<h1 id={styles.form_header }>Want to let us know something about the store?</h1>
 			<form
 				id='contact-form'
 				action=''
