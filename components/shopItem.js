@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import styles from '../styles/ShopItem.module.css'
 
-export default function ShopItem({ picture, name, price }) {
+export default function ShopItem({ picture, name, price, category }) {
     return (
         <div className={styles.container}>
             <Image src={picture} />
