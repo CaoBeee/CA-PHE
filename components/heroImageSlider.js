@@ -2,7 +2,7 @@ import React from 'react'
 
 import HeroSlider, {
     Slide,
-    ButtonsNav,
+    // ButtonsNav,
     Nav,
   } from "hero-slider";
 

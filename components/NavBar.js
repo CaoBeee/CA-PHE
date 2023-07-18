@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
 import logo from '../public/images/logo_caphe-01.svg'
 import Image from 'next/image'
+import PropTypes from 'prop-types';
 
 const NavBar = ({ isSticky }) => {
 	const navbarClasses = `${styles.navbar} ${isSticky ? styles.navbarScrolled : styles.navbar}`
@@ -38,5 +39,9 @@ const NavBar = ({ isSticky }) => {
 		</>
 	)
 }
+
+NavBar.propTypes = {
+	isSticky: PropTypes.bool.isRequired,
+  };
 
 export default NavBar
