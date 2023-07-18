@@ -1,16 +1,25 @@
 module.exports = {
-	extends: ['eslint:recommended', 'plugin:react/recommended'],
-	plugins: ['@next/eslint-plugin-next'],
-	parserOptions: {
-		sourceType: 'module',
-		ecmaVersion: 2020,
-	},
-	rules: {
-		'no-reserved-keywords': 0,
-	},
-	settings: {
-		react: {
-			version: 'detect',
-		},
-	},
-}
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+  ],
+  plugins: ['react', 'jsx-a11y', '@next/eslint-plugin-next'],
+  settings: {
+    react: {
+      version: '18.2.0'
+    }
+  },
+  rules: {
+    // Your custom rules
+  },
+};
