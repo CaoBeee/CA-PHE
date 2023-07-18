@@ -15,7 +15,8 @@ const About = () => {
 					<p className={styles.first_block_body }>At CA PHE, we take pride in our handcrafted coffee creations that are meticulously prepared by our skilled baristas. Every sip tells a story of the aromatic beans carefully sourced from the highlands of Vietnam, where the perfect balance of taste and quality is nurtured.
 						<br />
 						<br/>
-						Immerse yourself in the cozy ambiance of our cafes, where modern aesthetics blend harmoniously with traditional elements. Whether you're seeking a tranquil corner to relax or a buzzing atmosphere to meet friends, our spaces are designed to embrace the true essence of Vietnamese cafe culture.
+						Immerse yourself in the cozy ambiance of our cafes, where modern aesthetics blend harmoniously with traditional elements. Whether you&apos;re seeking a tranquil corner to relax or a buzzing atmosphere to meet friends, our spaces are designed to embrace the true essence of Vietnamese cafe culture.
+
 					</p>
 					<p className={styles.first_block_foot}>
 						<text id={styles.thirty}>30+</text>

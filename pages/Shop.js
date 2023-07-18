@@ -16,13 +16,15 @@ const Shop = () => {
     const [hovered, setHovered] = useState(-1)
     const selectedColor = '#788264'
     const notSelectedColor = '#ADC178'
+
+    let itemKey = 0;
     const itemList = [
-        <ShopItem picture={shirt} name="Test1 (Shirt)" price="$19.99" category="shirt" />,
-        <ShopItem picture={sweatshirt} name="Test2 (Top)" price="$19.99" category="top" />,
-        <ShopItem picture={sweatshirtGray} name="Test3 (Jacket)" price="$19.99" category="jacket" />,
-        <ShopItem picture={sweatshirt2} name="Test4 (Long Sleeve)" price="$19.99" category="long" />,
-        <ShopItem picture={longsleeve} name="Test5 (Pants)" price="$19.99" category="pant" />,
-        <ShopItem picture={longsleeve2} name="Test6 (Shoes)" price="$19.99" category="shoe" />,
+        <ShopItem key={itemKey++} picture={shirt} name="Test1 (Shirt)" price="$19.99" category="shirt" />,
+        <ShopItem key={itemKey++} picture={sweatshirt} name="Test2 (Top)" price="$19.99" category="top" />,
+        <ShopItem key={itemKey++} picture={sweatshirtGray} name="Test3 (Jacket)" price="$19.99" category="jacket" />,
+        <ShopItem key={itemKey++} picture={sweatshirt2} name="Test4 (Long Sleeve)" price="$19.99" category="long" />,
+        <ShopItem key={itemKey++} picture={longsleeve} name="Test5 (Pants)" price="$19.99" category="pant" />,
+        <ShopItem key={itemKey++} picture={longsleeve2} name="Test6 (Shoes)" price="$19.99" category="shoe" />,
     ]
 
     const shopItems = useMemo(() => {
