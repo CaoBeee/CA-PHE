@@ -15,7 +15,6 @@ export default function Layout({ children }) {
 	const [isSticky, setIsSticky] = useState(false);
 
 	useEffect(() => {
-		if (typeof window !== 'object') {
 			const handleScroll = () => {
 				const scrollThreshold = 100;
 				const isScrolled = window.pageYOffset > scrollThreshold;
@@ -28,8 +27,6 @@ export default function Layout({ children }) {
 			return () => {
 				window.removeEventListener('scroll', handleScroll);
 			}
-		}
-		
 	}, [])
 
 	return (
