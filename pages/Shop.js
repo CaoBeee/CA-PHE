@@ -49,7 +49,7 @@ const Shop = () => {
     return (
         <div className={styles.container}>
             <div className={styles.hero_container}>
-                <Image src={hero} alt='hero image' loading='eager' />
+                <Image src={hero} alt='hero image' height={500} width={500} loading='eager' />
             </div>
             <div className={buttons.shop_container}>
                 <div>

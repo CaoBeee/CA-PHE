@@ -8,7 +8,9 @@ const Header = () => {
 			<Link href='/'>
 				<Image
 					src={logo}
-					alt='Logo'
+				alt='Logo'
+				height={500}
+				width={500}
 				></Image>
 			</Link>
 	)
