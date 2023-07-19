@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Contact from '../components/contact'
 import ContactForm from '../components/contactform'
 import Container from '../components/Container'
-import green from '../public/images/green circle.png'
-import brown from '../public/images/brown circle.png'
+import green from '../public/images/green-circle.png'
+import brown from '../public/images/brown-circle.png'
 import styles from '../styles/Contact.module.css'
 
 const LandingPage = () => {
