@@ -16,8 +16,8 @@ export default function ShopItem({ picture, name, price,
 }
 
 ShopItem.propTypes = {
-    picture: PropTypes.string.isRequired,
+    picture: PropTypes.object.isRequired,
     name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    price: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   };
