@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import ShopItem from '../components/shopItem'
 import Image from 'next/image';
-import Hero from '../public/images/ShopHero.jpeg';
+import hero from '/public/images/ShopHero.jpeg';
 import shirt from '../public/images/shirt.jpeg';
 import sweatshirt from '../public/images/sweatshirt.png';
 import sweatshirtGray from '../public/images/sweatshirt-heathergray.png';
@@ -50,7 +50,7 @@ const Shop = () => {
     return (
         <div className={styles.container}>
             <div className={styles.hero_container}>
-                <Image src={Hero} />
+                <Image src={hero} />
             </div>
             <div className={buttons.shop_container}>
                 <div>
