@@ -6,7 +6,7 @@ import MenuFruitTea from '../components/menuFruitTea';
 import MenuSeasonal from '../components/menuSeasonal';
 import MenuSpecial from '../components/menuSpecial';
 import Image from 'next/image';
-import recommendedIcon from '../public/images/Menu Icon Set.png'
+import recommendedIcon from '../public/images/recommended-Icon.png'
 import coldIcon from '../public/images/cold-Icon.png'
 import hotIcon from '../public/images/hot-Icon.png'
 import coffee from '../public/images/seasonal2.jpeg';
