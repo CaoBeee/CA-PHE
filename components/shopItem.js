@@ -8,7 +8,7 @@ export default function ShopItem({ picture, name, price,
 }) {
     return (
         <div className={styles.container}>
-            <Image width='550' height="350" src={picture} />
+            <Image width="3840" height="2160" src={picture} />
             <p className={styles.item_name}>{name}</p>
             <p className={styles.price}>{price}</p>
         </div>
