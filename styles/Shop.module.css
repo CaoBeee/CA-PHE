@@ -1,26 +1,31 @@
-﻿.container{
-    width: 100%;
-    height:fit-content;
+﻿.container {
+	width: 100%;
+	height: fit-content;
 }
 
 .hero_container {
-    display: flex;
-    width: 100vw;
-    height: 54em;
-    object-fit: contain;
+	display: flex;
+	width: 100vw;
+	height: 54em;
+	object-fit: contain;
 }
 
-    .hero_container img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: 0px -16em;
-    }
+.hero_container img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: 0px -16em;
+}
 
 .item_container {
-    flex-wrap:wrap;
-    display:flex;
-    margin-left: 2em;
-    margin-right: 2em;
-    gap: 5em;
+	flex-wrap: wrap;
+	display: flex;
+	margin-left: 2em;
+	margin-right: 2em;
+	gap: 5em;
+}
+
+.item_container img {
+	width: 550px;
+	height: 350px;
 }
