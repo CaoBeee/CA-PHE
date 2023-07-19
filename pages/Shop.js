@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import ShopItem from '../components/shopItem'
 import Image from 'next/image';
-import hero from '/public/images/ShopHero.JPEG';
+import hero from '/public/images/shopHero.png';
 import shirt from '../public/images/shirt.jpeg';
 import sweatshirt from '../public/images/sweatshirt.png';
 import sweatshirtGray from '../public/images/sweatshirt-heathergray.png';
