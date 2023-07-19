@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar.js'
 import Header from './Header.js'
