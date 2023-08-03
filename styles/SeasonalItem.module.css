@@ -2,18 +2,18 @@
 	display: flex;
 	text-align: center;
 	justify-content: center;
+	width: 100%;
 }
 
 .ImageContainer {
-	margin-right: 10rem;
 	width: 100%;
 }
 
 .ImageContainer img {
 	margin: 1rem;
 	border-radius: 10px;
-	max-width: 100%;
-	height: max-content;
+	width: 70%;
+	height: auto;
 }
 
 .header {
@@ -29,4 +29,14 @@
 	color: black;
 	font-weight: bold;
 	font-size: 30px;
+}
+
+@media (max-width: 768px) {
+	.ImageContainer {
+		margin-right: 0; /* Remove margin for mobile devices */
+	}
+
+	.ImageContainer img {
+		margin: 0.5rem 0; /* Reduce vertical margin for smaller spacing */
+	}
 }
