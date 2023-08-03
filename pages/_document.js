@@ -5,7 +5,12 @@ class MyDocument extends Document {
 	render() {
 		return (
 			<Html>
-				<Head />
+				<Head>
+					<link
+						href='https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'
+						rel='stylesheet'
+					/>
+				</Head>
 				<body style={{ margin: 0 }}>
 					<Main />
 					<NextScript />

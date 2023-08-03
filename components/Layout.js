@@ -34,9 +34,7 @@ export default function Layout({ children }) {
 				<NavBar isSticky={isSticky} />
 			</header>
 			<main>{children}</main>
-			<div>
-				<Footer />
-			</div>
+			<Footer />
 		</>
 	)
 }

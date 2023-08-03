@@ -1,42 +1,170 @@
+/* components/Footer.module.css */
 .footer {
-	margin-top: 3rem;
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+	margin-top: 100px;
+	position: relative;
+	background-color: #1b1c1e;
+	color: #eee5e9;
+	padding: 40px 0;
+	background-image: url('../public/images/footerBG.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	max-width: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	padding-top: 80px;
+	padding-bottom: 0px;
+}
+
+.column {
 	display: flex;
 	flex-direction: column;
+	flex: 1 1 25%;
+	padding: 0 20px;
+	justify-content: flex-start;
 	align-items: center;
 }
 
-.footerTop {
+.header3 {
+	color: 'white';
+	font-size: 44px;
+	font-family: 'Lora';
+	font-weight: '600';
+	letter-spacing: 2.2;
+	word-wrap: 'break-word';
+}
+
+.wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.wave > svg {
+	position: relative;
+	display: block;
+	width: calc(150% + 1.3px);
+	height: 100px;
+}
+
+.shapeFill {
+	fill: #eee5e9;
+}
+
+.coffeeIconText {
+	display: flex;
+	width: 9.125rem;
+	margin-top: 1rem;
+	height: 2rem;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+	content: 'Follow';
+	color: #fff;
+	text-align: center;
+	font-family: 'La Belle Aurore';
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15rem;
+}
+
+.socialsContainer {
+	width: fit-content;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	max-width: 65vw;
-	margin-right: 5rem;
 }
 
+.socialsContainer > img {
+	margin-top: -2rem;
+	margin-right: 1rem;
+}
+
+.lineThree {
+	margin-bottom: 2rem;
+}
 .storeHours {
-	text-align: center;
+	display: flex;
+	flex-direction: row;
 }
 
-.store,
-.email,
-.help {
-	cursor: pointer;
+.daysContainer {
+	width: inherit;
+}
+
+.days {
+	color: #fff;
+	text-align: right;
+	font-family: 'Lora';
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.hoursContainer {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin: 0 20px;
 }
 
-.footerBottom {
-	background-color: #333;
+.hours {
 	color: #fff;
-	padding: 10px;
-	text-align: center;
-	font-size: 14px;
-	margin-top: auto;
+	font-family: 'Lora';
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-left: 2rem;
+}
+
+.contactUsText {
+	display: flex;
+	flex-direction: row;
+	color: #fff;
+	text-align: left;
+	font-family: 'Lora';
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.0875rem;
+	text-align: left;
+	width: max-content;
+}
+
+.newsletterInput {
+	color: #74808b;
+	text-align: left;
+	font-family: 'Lora';
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.075rem;
+	border-radius: 0.5rem;
+	background: #f5f5f5;
 	width: 100%;
-	/* margin-left: 6rem; */
+	height: 3.625rem;
+	flex-shrink: 0;
+	padding-left: 1rem;
+	padding-right: 40px;
+}
+
+.newsletterInputBtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5rem 0.5rem;
+	margin: 0.3rem;
+	margin-right: 0.5rem;
+	border-radius: 0.5rem;
+	background: #1b1c1e;
 }
