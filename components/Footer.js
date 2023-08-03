@@ -130,9 +130,9 @@ const Footer = () => {
 									<path
 										d='M27 1L1 14.3571L10.5789 16.1381M27 1L23.5789 27.7143L10.5789 16.1381M27 1L10.5789 16.1381M10.5789 16.1381V25.9333L15.0247 20.097'
 										stroke='white'
-										stroke-width='2'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='2'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 								</svg>
 							</button>
