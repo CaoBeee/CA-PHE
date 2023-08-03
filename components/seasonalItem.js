@@ -20,14 +20,14 @@ const SeasonalItem = () => {
 					<Image
 						src={seasonalOne}
 						alt='seasonalItem'
-						width={464}
-						height={464}
+						width={450}
+						height={450}
 					/>
 					<Image
 						src={seasonalTwo}
 						alt='seasonalItem'
-						width={464}
-						height={464}
+						width={450}
+						height={450}
 					/>
 				</div>
 			</div>

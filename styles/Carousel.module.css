@@ -1,39 +1,39 @@
 .carousel {
-    text-align: center;
-    width: 100vw;
-    height: fit-content;
-    margin: auto;
+	text-align: center;
+	width: 100vw;
+	height: fit-content;
+	margin: auto;
 }
 
 .carouselImage {
-    margin: 0 auto;
-    width: 100vw;
-    height: 100vh;
-    min-height: 50vh;
-    object-fit: cover;
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	min-height: 50vh;
+	object-fit: cover;
 }
 
-@media(max-width: 1920px){
-    .caption h3{
-        font-size: 28px;
-    }
-    .caption p{
-        font-size: 22px;
-    }
+@media (max-width: 1920px) {
+	.caption h3 {
+		font-size: 28px;
+	}
+	.caption p {
+		font-size: 22px;
+	}
 }
 
-@media(max-width:1200px){
-    .carouselImage{
-        height:auto;
-    }
+@media (max-width: 1200px) {
+	.carouselImage {
+		height: auto;
+	}
 }
 
-    @media(max-width: 600px) {
-        .caption h3 {
-            font-size: 16px;
-        }
+@media (max-width: 600px) {
+	.caption h3 {
+		font-size: 16px;
+	}
 
-        .caption p {
-            font-size: 12px;
-        }
-    }
+	.caption p {
+		font-size: 12px;
+	}
+}

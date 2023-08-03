@@ -6,11 +6,14 @@
 
 .ImageContainer {
 	margin-right: 10rem;
+	width: 100%;
 }
 
 .ImageContainer img {
 	margin: 1rem;
 	border-radius: 10px;
+	max-width: 100%;
+	height: max-content;
 }
 
 .header {

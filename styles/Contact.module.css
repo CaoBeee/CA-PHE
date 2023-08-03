@@ -1,5 +1,5 @@
 .contact h1 {
-	font-family:"Quicksand";
+	font-family: 'Quicksand';
 	padding: 5px 0px;
 	font-style: normal;
 	font-weight: 700;
@@ -37,14 +37,14 @@
 	border: none;
 }
 
-	.contact input:not(textarea) {
-		width: 60em;
-		padding: 0.5em;
-		background: none;
-		margin-bottom: -1em;
-		margin-left: 22em;
-		border: 1px solid black;
-	}
+.contact input:not(textarea) {
+	width: 60em;
+	padding: 0.5em;
+	background: none;
+	margin-bottom: -1em;
+	margin-left: 22em;
+	border: 1px solid black;
+}
 
 .contact input[type='textarea'] {
 	height: 10em;
@@ -56,15 +56,14 @@
 	white-space: pre-line;
 }
 
-	.contact textarea {
-		height: 10em;
-		width: 60em;
-		background: none;
-		border: 1px solid black;
-		padding: 0.5em;
-		margin-left: 22em;
-	}
-
+.contact textarea {
+	height: 10em;
+	width: 60em;
+	background: none;
+	border: 1px solid black;
+	padding: 0.5em;
+	margin-left: 22em;
+}
 
 .contact input[type='textarea']:-ms-input-placeholder {
 	position: relative;
@@ -85,7 +84,7 @@
 	float: right;
 	width: 8em;
 	border-radius: 10px;
-	background-color: #ADC178;
+	background-color: #adc178;
 	font-family: 'Quicksand';
 	font-style: normal;
 	font-weight: 500;
@@ -93,15 +92,15 @@
 	transition: all 0.3s ease-in;
 }
 
-	.contact input[type='submit']:hover {
-		filter: brightness(0.85);
-	}
+.contact input[type='submit']:hover {
+	filter: brightness(0.85);
+}
 
-#green{
-	position:absolute;
-	left:-6em;
-	bottom:11em;
-	z-index:-1;
+#green {
+	position: absolute;
+	left: -6em;
+	bottom: 11em;
+	z-index: -1;
 	transform: scale(1);
 }
 
@@ -109,6 +108,6 @@
 	position: absolute;
 	z-index: -1;
 	transform: scale(1);
-	right:-1em;
+	right: -1em;
 	bottom: -7em;
 }
