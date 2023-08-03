@@ -83,8 +83,7 @@
 	justify-content: space-between;
 }
 
-.socialsContainer > img {
-	margin-top: -2rem;
+.socialsContainer > a {
 	margin-right: 1rem;
 }
 
