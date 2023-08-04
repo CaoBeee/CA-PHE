@@ -1,8 +1,8 @@
 .navbar {
 	color: black;
 	text-align: center;
-	width: 100vw;
-	transition: top 0.3s ease;
+	width: 100%;
+	/* transition: top 0.3s ease; */
 }
 
 .navbar li {
@@ -22,6 +22,16 @@
 	height: auto;
 	width: 10rem;
 	margin-right: 1rem;
+}
+
+.navbar a:hover {
+	background-color: #9fa988;
+	border-radius: 0.5rem;
+}
+
+.navbar a:active {
+	background-color: #788264;
+	border-radius: 0.5rem;
 }
 
 .navbarScrolled {
