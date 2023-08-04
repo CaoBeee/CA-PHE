@@ -68,4 +68,16 @@
 	.ImageContainer img {
 		margin: 0.5rem 0;
 	}
+
+	.header img {
+		width: 100%;
+	}
+
+	.Container img {
+		margin: 1rem;
+		border-radius: 10px;
+		object-fit: cover;
+		box-shadow: 0px 4px 4px 0px #00000040;
+		width: 95%;
+	}
 }

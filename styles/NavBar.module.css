@@ -2,7 +2,6 @@
 	color: black;
 	text-align: center;
 	width: 100%;
-	/* transition: top 0.3s ease; */
 }
 
 .navbar li {
@@ -46,6 +45,16 @@
 
 .navbarScrolled a {
 	width: fit-content;
+}
+
+.navbarScrolled a:hover {
+	background-color: #9fa988;
+	border-radius: 0.5rem;
+}
+
+.navbarScrolled a:active {
+	background-color: #788264;
+	border-radius: 0.5rem;
 }
 
 .navbarScrolled a > img {
