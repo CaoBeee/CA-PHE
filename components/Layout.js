@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import NavBar from './NavBar.js'
 import Header from './Header.js'
 import Footer from './Footer.js'
 import PropTypes from 'prop-types'

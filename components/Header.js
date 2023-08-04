@@ -4,6 +4,7 @@ import Image from 'next/image'
 import logo from '../public/images/logo_caphe-01.svg'
 import styles from '../styles/Header.module.css'
 import NavBar from './NavBar'
+import PropTypes from 'prop-types'
 
 const Header = ({ isSticky }) => {
 	return (
@@ -19,6 +20,10 @@ const Header = ({ isSticky }) => {
 			<NavBar isSticky={isSticky}></NavBar>
 		</header>
 	)
+}
+
+Header.propTypes = {
+	isSticky: PropTypes.bool.isRequired,
 }
 
 export default Header
