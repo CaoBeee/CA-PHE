@@ -31,19 +31,19 @@ const Footer = () => {
 						/>
 						<p className={styles.coffeeIconText}>Follow</p>
 						<div className={styles.socialsContainer}>
-							<a href='twitter.com'>
+							<a href='//www.twitter.com'>
 								<Image
 									src={twitter}
 									alt='twitter icon'
 								/>
 							</a>
-							<a href='twitter.com'>
+							<a href='//www.facebook.com'>
 								<Image
 									src={facebook}
 									alt='facebook icon'
 								/>
 							</a>
-							<a href='instagram.com'>
+							<a href='//www.instagram.com'>
 								<Image
 									src={instagram}
 									alt='instagram icon'
