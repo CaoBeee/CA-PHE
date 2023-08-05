@@ -1,0 +1,10 @@
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.slider img {
+	object-fit: contain;
+}

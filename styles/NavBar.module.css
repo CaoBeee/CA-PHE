@@ -21,11 +21,13 @@
 	height: auto;
 	width: 10rem;
 	margin-right: 1rem;
+	border-radius: 0.5rem;
 }
 
 .navbar a:hover {
 	background-color: #9fa988;
 	border-radius: 0.5rem;
+	transition: all 0.3s ease-in;
 }
 
 .navbar a:active {
@@ -50,6 +52,7 @@
 .navbarScrolled a:hover {
 	background-color: #9fa988;
 	border-radius: 0.5rem;
+	transition: all 0.3s ease-in;
 }
 
 .navbarScrolled a:active {
