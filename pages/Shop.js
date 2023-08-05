@@ -22,43 +22,43 @@ const Shop = () => {
 		<ShopItem
 			key={1}
 			picture={shirt}
-			name='Test1 (Shirt)'
+			name='Cool Summer Shirt'
 			price='$19.99'
 			category='shirt'
 		/>,
 		<ShopItem
 			key={2}
 			picture={sweatshirt}
-			name='Test2 (Top)'
-			price='$19.99'
+			name='Comfy Sweatshirt Top'
+			price='$29.99'
 			category='top'
 		/>,
 		<ShopItem
 			key={3}
 			picture={sweatshirtGray}
-			name='Test3 (Jacket)'
-			price='$19.99'
+			name='Stylish Jacket'
+			price='$49.99'
 			category='jacket'
 		/>,
 		<ShopItem
 			key={4}
 			picture={sweatshirt2}
-			name='Test4 (Long Sleeve)'
-			price='$19.99'
+			name='Casual Long Sleeve Tee'
+			price='$24.99'
 			category='long'
 		/>,
 		<ShopItem
 			key={5}
 			picture={longsleeve}
-			name='Test5 (Pants)'
-			price='$19.99'
+			name='Versatile Pants'
+			price='$39.99'
 			category='pant'
 		/>,
 		<ShopItem
 			key={6}
 			picture={longsleeve2}
-			name='Test6 (Shoes)'
-			price='$19.99'
+			name='Sleek Sneakers'
+			price='$69.99'
 			category='shoe'
 		/>,
 	]

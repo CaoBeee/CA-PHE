@@ -1,0 +1,11 @@
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.slider img {
+	border: 1px solid red;
+	object-fit: contain;
+}
