@@ -12,11 +12,9 @@
 .container {
 	display: flex;
 	justify-content: space-evenly;
-	max-width: 100%;
-	margin: 0 auto;
+	width: 100%;
 	flex-wrap: wrap;
-	padding-top: 80px;
-	padding-bottom: 0px;
+	padding-top: 5rem;
 }
 
 .column {
@@ -26,6 +24,10 @@
 	padding: 0 20px;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.column:first-child {
+	margin: 0rem -5rem;
 }
 
 .header3 {
@@ -146,6 +148,8 @@
 	letter-spacing: 0.0875rem;
 	text-align: left;
 	width: max-content;
+	cursor: pointer;
+	word-wrap: initial;
 }
 
 .newsletterInput {

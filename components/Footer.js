@@ -68,13 +68,19 @@ const Footer = () => {
 						<div className={styles.storeHours}>
 							<div className={styles.daysContainer}>
 								<div className={styles.days}>Monday-Friday</div>
+								<br />
 								<div className={styles.days}>Saturday</div>
+								<br />
 								<div className={styles.days}>Sunday</div>
+								<br />
 							</div>
 							<div className={styles.HoursContainer}>
 								<div className={styles.hours}>7:00 - 18:00</div>
+								<br />
 								<div className={styles.hours}>7:00 - 18:00</div>
+								<br />
 								<div className={styles.hours}>Closed</div>
+								<br />
 							</div>
 						</div>
 					</div>
@@ -92,9 +98,15 @@ const Footer = () => {
 								}}
 							></div>
 							<br />
-							<div className={styles.contactUsText}>Address Number</div>
-							<div className={styles.contactUsText}>E-mail</div>
-							<div className={styles.contactUsText}>Phone</div>
+							<div className={styles.contactUsText}>
+								24680 California Drive, <br />
+								Garden Grove, CA 92844
+							</div>
+							<br />
+							<div className={styles.contactUsText}>hello@caphe.com</div>
+							<br />
+							<div className={styles.contactUsText}>(714) 246-3579</div>
+							<br />
 						</div>
 
 						{/* Content for Column 3 */}
