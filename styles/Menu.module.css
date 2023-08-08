@@ -87,7 +87,7 @@
 .menu_header {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 77.5%;
     border-bottom: 2px solid black;
     margin-left: 3.75em;
 }
@@ -97,11 +97,12 @@
     }
 
 #menu_title {
-    margin-left: 3em;
+    margin-left: 1.5em;
+    margin-right:auto;
 }
 
 #calories {
-    margin-left: 25vw;
+    margin-left: auto;
     margin-right:auto;
 }
 
@@ -117,10 +118,10 @@
         font-size: 1em;
     }
     #menu_title{
-        margin-left: 1.25em;
+        margin-left: 1.75em;
     }
     #calories{
-        margin-left: auto;
+        margin-left: 30vw;
     }
     .menu_header{
         margin-left: 2.67em;
@@ -145,6 +146,7 @@
     }
 
     #calories{
+        margin-left:27.5vw;
         font-size: 20px;
     }
 
@@ -157,6 +159,9 @@
 @media (max-width: 768px){
     .menu_legend{
         gap: 1.5em;
+    }
+    .menu_header{
+        width: 65%;
     }
     .legend_item img {
         width: 1.17em;

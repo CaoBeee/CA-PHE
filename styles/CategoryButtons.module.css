@@ -19,14 +19,17 @@
 }
 
 .menu_button {
+	font-family: 'quicksand';
+	font-weight:500;
 	width: 8em;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	padding-top: 0.25em;
 	padding-bottom: 0.25em;
 	border: none;
-	font-size: 20px;
+	font-size: 24px;
 	transition: all 0.3s ease-in;
+	border-radius: 10px;
 }
 
 .shop_container {
@@ -84,7 +87,7 @@
 	}
 
 	.menu_button {
-		font-size: 18px;
+		font-size: 22px;
 	}
 	.shop_container {
 		margin-left: auto;
@@ -103,7 +106,7 @@
 	}
 
 	.menu_button {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.shop_button{
 		font-size: 24px;
@@ -122,7 +125,7 @@
 	}
 
 	.menu_button {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.shop_button {
 		font-size: 20px;
@@ -140,7 +143,7 @@
 		margin-bottom: 1em;
 	}
 	.menu_button{
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.shop_button {
 		font-size: 16px;

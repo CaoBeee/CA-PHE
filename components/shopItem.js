@@ -3,8 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/ShopItem.module.css'
 import PropTypes from 'prop-types'
 
-export default function ShopItem({ picture, name, price,
-    // category
+export default function ShopItem({ picture, name, price, category
 }) {
     return (
         <div className={styles.container}>
