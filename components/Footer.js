@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Footer.module.css'
 import footerCoffeeIcon from '../public/images/footerCoffeeIcon.png'
 import Image from 'next/image'
@@ -7,6 +7,10 @@ import facebook from '../public/images/facebookIcon.svg'
 import instagram from '../public/images/instagramIcon.svg'
 
 const Footer = () => {
+	const placeholderText = 'Enter your email'
+	const [typedText, setTypedText] = useState('')
+	const [currentIndex, setCurrentIndex] = useState(0)
+
 	return (
 		<>
 			<footer className={styles.footer}>

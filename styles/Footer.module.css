@@ -169,7 +169,22 @@
 	height: 3.625rem;
 	flex-shrink: 0;
 	padding-left: 1rem;
-	padding-right: 40px;
+	padding-right: 2.5rem;
+}
+
+.newsletterInput::before {
+	content: 'enter your email';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	white-space: nowrap;
+	font-family: 'Lora';
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.075rem;
+	animation: typing 8s steps(22), blink-caret 0.75s step-end infinite;
 }
 
 .newsletterInputBtn {
@@ -181,11 +196,18 @@
 	margin-right: 0.5rem;
 	border-radius: 0.5rem;
 	background: #1b1c1e;
-	transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .newsletterInputBtn:hover {
-	transform: scale(1.1);
+	animation: shake 0.5s ease-in-out 1;
+}
+
+.newsletterInputBtn:active {
+	transform: scale(1.3);
+	transform: rotate(8deg);
+	background-color: #788264;
+	border-color: #788264;
 }
 
 @keyframes shake {
@@ -201,5 +223,24 @@
 	}
 	75% {
 		transform: rotate(5deg); /* Gradual transition to the final position */
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-right-color: transparent;
+	}
+	50% {
+		border-right-color: #333; /* Change this to match your background color */
 	}
 }
