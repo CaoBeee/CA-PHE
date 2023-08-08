@@ -7,10 +7,6 @@ import facebook from '../public/images/facebookIcon.svg'
 import instagram from '../public/images/instagramIcon.svg'
 
 const Footer = () => {
-	const placeholderText = 'Enter your email'
-	const [typedText, setTypedText] = useState('')
-	const [currentIndex, setCurrentIndex] = useState(0)
-
 	return (
 		<>
 			<footer className={styles.footer}>
@@ -112,8 +108,6 @@ const Footer = () => {
 							<div className={styles.contactUsText}>(714) 246-3579</div>
 							<br />
 						</div>
-
-						{/* Content for Column 3 */}
 					</div>
 					<div className={styles.column}>
 						<div>
@@ -153,8 +147,6 @@ const Footer = () => {
 								</svg>
 							</button>
 						</div>
-
-						{/* Content for Column 4 */}
 					</div>
 				</div>
 			</footer>
