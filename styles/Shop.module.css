@@ -6,16 +6,14 @@
 .hero_container {
 	display: flex;
 	width: 100vw;
-	height: 54em;
-	object-fit: contain;
+	height: auto;
+	overflow:hidden;
 }
 
 .hero_container img {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	object-fit: cover;
-	object-position: 0px -16em;
-	overflow: hidden;
 }
 
 .item_container {

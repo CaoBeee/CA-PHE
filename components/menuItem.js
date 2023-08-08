@@ -11,8 +11,8 @@ export default function MenuItem({item_image, name, calories, recommended, cold,
 	return (
 		<div className={styles.container}>
 			<Image className={styles.item_image} src={item_image} />
-			<span className={styles.name}>{name}</span>
-			<span className={styles.calories}>{calories}</span>
+			<p className={styles.name}>{name}</p>
+			<p className={styles.calories}>{calories}</p>
 			<div className={styles.icon_container}>
 				{recommended && <Image className={styles.icon} src={recommendedIcon} />}
 				{cold && <Image className={styles.icon} src={coldIcon} />}

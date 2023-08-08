@@ -15,13 +15,14 @@ import styles from '../styles/Menu.module.css';
 const Menu = () => {
     const [Menu, setMenu] = useState(0)
     const [hovered, setHovered] = useState(-1)
+    const [category, setCategory] = useState('Seasonal')
     const selectedColor = '#788264'
     const notSelectedColor = '#ADC178'
 
     return (
         <div className={styles.container}>
             <div className={styles.image_container}>
-                <p>Our Drinks</p>
+                <p>Our Menu</p>
                 <Image src={coffee} />
             </div>
             <div className={buttons.menu_container}>
@@ -31,6 +32,7 @@ const Menu = () => {
                     style={{ backgroundColor: (Menu === 0 && selectedColor) || notSelectedColor, filter: (hovered === 0 && Menu !== 0 && 'brightness(0.8)') || 'brightness(1)' }}
                     onClick={() => {
                         setMenu(0)
+                        setCategory('Seasonal')
                     }}
                     onMouseEnter={() => {
                         setHovered(0)
@@ -48,6 +50,7 @@ const Menu = () => {
                     style={{ backgroundColor: (Menu === 1 && selectedColor) || notSelectedColor, filter: (hovered === 1 && Menu !== 1 && 'brightness(0.8)') || 'brightness(1)' }}
                     onClick={() => {
                         setMenu(1)
+                        setCategory('Coffee')
                     }}
                     onMouseEnter={() => {
                         setHovered(1)
@@ -65,6 +68,7 @@ const Menu = () => {
                     style={{ backgroundColor: (Menu === 2 && selectedColor) || notSelectedColor, filter: (hovered === 2 && Menu !== 2 && 'brightness(0.8)') || 'brightness(1)' }}
                     onClick={() => {
                         setMenu(2)
+                        setCategory('Milk Tea')
                     }}
                     onMouseEnter={() => {
                         setHovered(2)
@@ -82,6 +86,7 @@ const Menu = () => {
                     style={{ backgroundColor: (Menu === 3 && selectedColor) || notSelectedColor, filter: (hovered === 3 && Menu !== 3 && 'brightness(0.8)') || 'brightness(1)' }}
                     onClick={() => {
                         setMenu(3)
+                        setCategory('Fruit Tea')
                     }}
                     onMouseEnter={() => {
                         setHovered(3)
@@ -99,6 +104,7 @@ const Menu = () => {
                     style={{ backgroundColor: (Menu === 4 && selectedColor) || notSelectedColor, filter: (hovered === 4 && Menu !== 4 && 'brightness(0.8)') || 'brightness(1)' }}
                     onClick={() => {
                         setMenu(4)
+                        setCategory('Special')
                     }}
                     onMouseEnter={() => {
                         setHovered(4)
@@ -128,7 +134,7 @@ const Menu = () => {
                 <div style={{ backgroundColor: Menu === 0 && "#E0DBE4" || Menu === 1 && "#E4DEDB" || Menu === 2 && "#DBE1E4" || Menu === 3 && "#EAD5D5" || Menu === 4 && "#DBE4DF" }} className={styles.menu_item_container}>
                     <div className={styles.menu_header}>
                         <h2 id={styles.menu_title}>
-                            Seasonal
+                            {category }
                         </h2>
                         <h2 id={styles.calories}>
                             Calories

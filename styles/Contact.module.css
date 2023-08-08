@@ -37,19 +37,21 @@
 	border: none;
 }
 
-.contact input:not(textarea) {
-	width: 60em;
-	padding: 0.5em;
-	background: none;
-	margin-bottom: -1em;
-	margin-left: 22em;
-	border: 1px solid black;
-}
+	.contact input:not(textarea) {
+		width: 60em;
+		max-width: 50vw;
+		padding: 0.5em;
+		background: none;
+		margin-bottom: -1em;
+		margin-left: 22em;
+		border: 1px solid black;
+	}
 
-.contact input[type='textarea'] {
-	height: 10em;
-	width: 30em;
-}
+	.contact input[type='textarea'] {
+		height: 10em;
+		width: 30em;
+		max-width: 50vw;
+	}
 
 .contact input[type='textarea']::placeholder {
 	position: relative;
@@ -59,6 +61,7 @@
 .contact textarea {
 	height: 10em;
 	width: 60em;
+	max-width: 50vw;
 	background: none;
 	border: 1px solid black;
 	padding: 0.5em;
@@ -102,6 +105,8 @@
 	bottom: 11em;
 	z-index: -1;
 	transform: scale(1);
+	max-width: 50vw;
+	height:auto;
 }
 
 #brown {
@@ -110,4 +115,6 @@
 	transform: scale(1);
 	right: -1em;
 	bottom: -7em;
+	max-width: 50vw;
+	height:auto;
 }
