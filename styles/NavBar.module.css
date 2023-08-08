@@ -40,10 +40,12 @@
 	display: flex;
 	background: linear-gradient(180deg, #adc178 10.85%, white);
 	position: fixed;
-	top: 0;
-	width: 100vw;
+	top: -60px;
+	width: 100%;
 	z-index: 999;
 	justify-content: space-between;
+	transform: translateY(60px);
+	transition: transform 0.3s ease-in-out;
 }
 
 .navbarScrolled a {
