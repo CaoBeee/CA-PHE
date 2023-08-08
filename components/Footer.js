@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Footer.module.css'
 import footerCoffeeIcon from '../public/images/footerCoffeeIcon.png'
 import Image from 'next/image'
