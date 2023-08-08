@@ -1,11 +1,13 @@
 .container {
     font-family: 'Lora';
+    width: 100%;
+    height: fit-content;
 }
 
 .image_container {
     display: flex;
     width: 100vw;
-    height: 37.5em;
+    height: 80vh;
     object-fit: contain;
 }
 
@@ -13,15 +15,16 @@
         position: absolute;
         font-size: 6.25em;
         color: white;
-        top: 3em;
-        left: 2em;
+        top: 40vh;
+        left: 14vw;
     }
 
     .image_container img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: 0px -31.25em;
+        display: flex;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+        object-fit:cover;
     }
 
 .buttons_container {
@@ -32,6 +35,7 @@
 .menu_container {
     display: flex;
     flex-direction: row;
+    flex-wrap:nowrap;
 }
 
 .menu_legend {
@@ -40,9 +44,9 @@
     border: 2px solid black;
     height: fit-content;
     padding: 1em;
-    position: absolute;
-    left: 1.25em;
+    margin-left: 1em;
     gap: 3.75em;
+    width: fit-content;
 }
 
 .legend_item {
@@ -72,17 +76,18 @@
     -webkit-mask: var(--mask);
     mask: var(--mask);
     height: fit-content;
-    min-height: 80vh;
-    margin-left: 18.75em;
+    margin-left: 1em;
     margin-right: auto;
+    margin-bottom:1em;
     width: 87.5em;
+    max-width: 100vw;
     padding-bottom: 3.125em;
 }
 
 .menu_header {
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 100%;
     border-bottom: 2px solid black;
     margin-left: 3.75em;
 }
@@ -96,6 +101,106 @@
 }
 
 #calories {
-    margin-left: auto;
-    margin-right: 7.25em;
+    margin-left: 25vw;
+    margin-right:auto;
+}
+
+@media (max-width: 1368px){
+    .menu_legend{
+        gap: 2.5em;
+    }
+    .legend_item img{
+        width: 2.08em;
+        height: 2.08em;
+    }
+    .legend_item span{
+        font-size: 1em;
+    }
+    #menu_title{
+        margin-left: 1.25em;
+    }
+    #calories{
+        margin-left: auto;
+    }
+    .menu_header{
+        margin-left: 2.67em;
+    }
+    .menu_container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu_legend{
+        gap: 2em;
+    }
+    .legend_item img {
+        width: 1.56em;
+        height: 1.56em;
+    }
+
+    .legend_item span {
+        font-size: 1em;
+    }
+
+    #calories{
+        font-size: 20px;
+    }
+
+    #menu_title {
+        margin-left: 1em;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .menu_legend{
+        gap: 1.5em;
+    }
+    .legend_item img {
+        width: 1.17em;
+        height: 1.17em;
+    }
+
+    .legend_item span {
+        font-size: 1em;
+    }
+
+    #calories{
+        font-size: 16px;
+    }
+
+    #menu_title {
+        margin-left: 0em;
+        font-size: 16px;
+    }
+    .menu_container{
+        flex-wrap:wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width: 660px){
+    #menu_title {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 568px) {
+}
+
+@media (max-width: 480px) {
+
+    #calories {
+        margin-left: 27.5vw;
+        font-size: 14px;
+    }
+
+    #menu_title {
+        font-size: 14px;
+    }
+    .menu_header{
+        margin-left: 1.5em;
+    }
 }

@@ -87,7 +87,7 @@ const Shop = () => {
 		<div className={styles.container}>
 			<div className={styles.hero_container}>
 				<Image
-					src={hero}
+					src={shirt}
 					alt='hero image'
 					placeholder='blur'
 					width={1920}

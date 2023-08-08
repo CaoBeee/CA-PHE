@@ -26,7 +26,7 @@ const About = () => {
 				</div>
 			</div>
 			<div className={styles.second_block}>
-				<p>Indulge in our signature Vietnamese coffee blends, brewed using traditional methods that have benn passed down through generations. From the robust and bold flavors of our traditional CA PHE SUA DA to the smooth and velvety notes of our CA PHE TRUNG, each sip is an invitation to a sensory adventure.</p>
+				<p>Indulge in our signature Vietnamese coffee blends, brewed using traditional methods that have been passed down through generations. From the robust and bold flavors of our traditional CA PHE SUA DA to the smooth and velvety notes of our CA PHE TRUNG, each sip is an invitation to a sensory adventure.</p>
 				<Image src={filter} alt='coffee filter' />
 			</div>
 			<div className={styles.third_block}>
