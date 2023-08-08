@@ -10,7 +10,6 @@ import sweatshirtGray from '../public/images/sweatshirt-heathergray.jpg'
 import sweatshirt2 from '../public/images/sweatshirt2.jpg'
 import longsleeve from '../public/images/longsleeve-white.jpg'
 import longsleeve2 from '../public/images/longsleeve-white2.jpg'
-import hero from '/public/images/shopHero.jpg'
 
 const Shop = () => {
 	const [shop, setShop] = useState(0)
