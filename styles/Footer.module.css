@@ -86,8 +86,10 @@
 
 .socialsContainer > a {
 	margin-right: 1rem;
-	transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-		background-image 0.3s ease-in-out;
+}
+
+.socialsContainer > a > img {
+	transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .socialsContainer > a > img:hover {
@@ -95,7 +97,7 @@
 }
 
 .socialsContainer > a > img:active {
-	transform: scale(1.03);
+	transform: scale(1.2);
 }
 
 .lineThree {
@@ -179,6 +181,11 @@
 	margin-right: 0.5rem;
 	border-radius: 0.5rem;
 	background: #1b1c1e;
+	transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.newsletterInputBtn:hover {
+	transform: scale(1.1);
 }
 
 @keyframes shake {
