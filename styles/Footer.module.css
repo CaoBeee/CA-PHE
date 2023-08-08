@@ -84,6 +84,16 @@
 
 .socialsContainer > a {
 	margin-right: 1rem;
+	transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+		background-image 0.3s ease-in-out;
+}
+
+.socialsContainer > a > img:hover {
+	animation: shake 0.5s ease-in-out 1;
+}
+
+.socialsContainer > a > img:active {
+	transform: scale(1.03);
 }
 
 .lineThree {
@@ -165,4 +175,20 @@
 	margin-right: 0.5rem;
 	border-radius: 0.5rem;
 	background: #1b1c1e;
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: rotate(0deg); /* Adjusted rotation angles */
+	}
+	25% {
+		transform: rotate(10deg); /* Less dramatic change at the beginning */
+	}
+	50% {
+		transform: rotate(-10deg); /* Smoother transition towards the end */
+	}
+	75% {
+		transform: rotate(5deg); /* Gradual transition to the final position */
+	}
 }
