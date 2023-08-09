@@ -12,10 +12,48 @@ import longsleeve from '../public/images/longsleeve-white.jpg'
 import longsleeve2 from '../public/images/longsleeve-white2.jpg'
 
 const Shop = () => {
-	const [shop, setShop] = useState(0)
+	const [shop, setShop] = useState([0])
 	const [hovered, setHovered] = useState(-1)
-	const selectedColor = '#788264'
-	const notSelectedColor = '#ADC178'
+	const [categories, setCategories] = useState({
+		all: true,
+		shirts: false,
+		tops: false,
+		jackets: false,
+		long_sleeves: false,
+		pants: false,
+		shoes: false,
+	});
+
+	const categoriesMap1 = [
+		{ key: 'all', label: 'All' },
+		{ key: 'shirts', label: 'Shirts' },
+		{ key: 'tops', label: 'Tops' },
+		{ key: 'jackets', label: 'Jackets' },
+	];
+
+	const categoriesMap2 = [
+		{ key: 'long_sleeves', label: 'Long Sleeves' },
+		{ key: 'pants', label: 'Pants' },
+		{ key: 'shoes', label: 'Shoes' },
+	];
+
+	const renderButtons = (categoriesMap, startIndex) => (
+		categoriesMap.map((category, index) => (
+			<button
+				key={category.key}
+				className={buttons.shop_button}
+				style={{
+					backgroundColor: categories[category.key] ? '#788264' : '#ADC178',
+					filter: (hovered === startIndex + index && shop !== startIndex + index && 'brightness(0.8)') || 'brightness(1)',
+				}}
+				onClick={() => toggleCategory(category.key)}
+				onMouseEnter={() => setHovered(startIndex + index)}
+				onMouseLeave={() => setHovered(-1)}
+			>
+				{category.label}
+			</button>
+		))
+	);
 
 	const itemList = [
 		<ShopItem
@@ -23,65 +61,81 @@ const Shop = () => {
 			picture={shirt}
 			name='Cool Summer Shirt'
 			price='$19.99'
-			category='shirt'
+			category='shirts'
 		/>,
 		<ShopItem
 			key={2}
 			picture={sweatshirt}
 			name='Comfy Sweatshirt Top'
 			price='$29.99'
-			category='top'
+			category='tops'
 		/>,
 		<ShopItem
 			key={3}
 			picture={sweatshirtGray}
 			name='Stylish Jacket'
 			price='$49.99'
-			category='jacket'
+			category='jackets'
 		/>,
 		<ShopItem
 			key={4}
 			picture={sweatshirt2}
 			name='Casual Long Sleeve Tee'
 			price='$24.99'
-			category='long'
+			category='long_sleeves'
 		/>,
 		<ShopItem
 			key={5}
 			picture={longsleeve}
 			name='Versatile Pants'
 			price='$39.99'
-			category='pant'
+			category='pants'
 		/>,
 		<ShopItem
 			key={6}
 			picture={longsleeve2}
 			name='Sleek Sneakers'
 			price='$69.99'
-			category='shoe'
+			category='shoes'
 		/>,
 	]
 
-	const shopItems = useMemo(() => {
-		switch (shop) {
-			case 0:
-				return itemList
-			case 1:
-				return itemList.filter(item => item.props.category === 'shirt')
-			case 2:
-				return itemList.filter(item => item.props.category === 'top')
-			case 3:
-				return itemList.filter(item => item.props.category === 'jacket')
-			case 4:
-				return itemList.filter(item => item.props.category === 'long')
-			case 5:
-				return itemList.filter(item => item.props.category === 'pant')
-			case 6:
-				return itemList.filter(item => item.props.category === 'shoe')
-			default:
-				return itemList
+	const toggleCategory = (category) => {
+		if (category === 'all') {
+			setCategories({
+				all: true,
+				shirt: false,
+				top: false,
+				jacket: false,
+				long: false,
+				pant: false,
+				shoe: false,
+			});
+		} else {
+			setCategories((prevCategories) => {
+				const newCategories = {
+					...prevCategories,
+					all: false,
+					[category]: !prevCategories[category],
+				};
+
+				if (!Object.values(newCategories).some((value) => value)) {
+					newCategories.all = true;
+				}
+
+				return newCategories;
+			});
 		}
-	}, [shop, itemList])
+	};
+
+	const shopItems = useMemo(() => {
+		if (categories.all) return itemList;
+
+		return itemList.filter((item) =>
+			categories[item.props.category]
+		);
+	}, [categories, itemList]);
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.hero_container}>
@@ -96,146 +150,10 @@ const Shop = () => {
 			</div>
 			<div className={buttons.shop_container}>
 				<div>
-					<button
-						id={buttons.all}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 0 && selectedColor) || notSelectedColor,
-							filter: (hovered === 0 && shop !== 0 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(0)
-						}}
-						onMouseEnter={() => {
-							setHovered(0)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						All
-					</button>
-
-					<button
-						id={buttons.shirts}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 1 && selectedColor) || notSelectedColor,
-							filter: (hovered === 1 && shop !== 1 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(1)
-						}}
-						onMouseEnter={() => {
-							setHovered(1)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						Shirts
-					</button>
-
-					<button
-						id={buttons.tops}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 2 && selectedColor) || notSelectedColor,
-							filter: (hovered === 2 && shop !== 2 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(2)
-						}}
-						onMouseEnter={() => {
-							setHovered(2)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						Tops
-					</button>
-
-					<button
-						id={buttons.jackets}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 3 && selectedColor) || notSelectedColor,
-							filter: (hovered === 3 && shop !== 3 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(3)
-						}}
-						onMouseEnter={() => {
-							setHovered(3)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						Jackets
-					</button>
+					{renderButtons(categoriesMap1, 0) }
 				</div>
 				<div>
-					<button
-						id={buttons.sleeves}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 4 && selectedColor) || notSelectedColor,
-							filter: (hovered === 4 && shop !== 4 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(4)
-						}}
-						onMouseEnter={() => {
-							setHovered(4)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						Long Sleeves
-					</button>
-
-					<button
-						id={buttons.pants}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 5 && selectedColor) || notSelectedColor,
-							filter: (hovered === 5 && shop !== 5 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(5)
-						}}
-						onMouseEnter={() => {
-							setHovered(5)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						Pants
-					</button>
-
-					<button
-						id={buttons.shoes}
-						className={buttons.shop_button}
-						style={{
-							backgroundColor: (shop === 6 && selectedColor) || notSelectedColor,
-							filter: (hovered === 6 && shop !== 6 && 'brightness(0.8)') || 'brightness(1)',
-						}}
-						onClick={() => {
-							setShop(6)
-						}}
-						onMouseEnter={() => {
-							setHovered(6)
-						}}
-						onMouseLeave={() => {
-							setHovered(-1)
-						}}
-					>
-						Shoes
-					</button>
+					{renderButtons(categoriesMap2, categoriesMap1.length)}
 				</div>
 			</div>
 			<div className={styles.item_container}>{shopItems}</div>
