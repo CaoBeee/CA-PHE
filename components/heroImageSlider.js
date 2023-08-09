@@ -1,23 +1,19 @@
 import React from 'react'
 import styles from '../styles/heroImageSlider.module.css'
-import HeroSlider, {
-	Slide,
-	// ButtonsNav,
-	Nav,
-} from 'hero-slider'
+import HeroSlider, { Slide, Nav } from 'hero-slider'
 
 // Images
 const heroImages = [
-	'https://i.imgur.com/BKckKrb.png',
-	'https://i.imgur.com/vxIJ1u0.png',
-	'https://i.imgur.com/371dZP3.png',
-	'https://i.imgur.com/DNnZz60.png',
+	'https://i.imgur.com/gKYqxsk.jpg',
+	'https://i.imgur.com/YHZx4Fq.jpg',
+	'https://i.imgur.com/BvXESCt.jpg',
+	'https://i.imgur.com/MHwZSgO.jpg',
 ]
 
 const HeroImageSlider = () => {
 	return (
 		<HeroSlider
-			height='80vh'
+			height='90vh'
 			autoplay
 			controller={{
 				initialSlide: 1,
@@ -32,7 +28,7 @@ const HeroImageSlider = () => {
 					navDescription={`Slide ${index + 1}`}
 					background={{
 						backgroundImageSrc: image,
-						backgroundAnimation: 'fade',
+						backgroundAnimation: 'wipe',
 						backgroundSize: 'cover',
 					}}
 				/>
