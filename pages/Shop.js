@@ -91,7 +91,7 @@ const Shop = () => {
 					placeholder='blur'
 					width={1920}
 					height={1080}
-					loading='lazy'
+					priority={true }
 				/>
 			</div>
 			<div className={buttons.shop_container}>

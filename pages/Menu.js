@@ -23,7 +23,7 @@ const Menu = () => {
         <div className={styles.container}>
             <div className={styles.image_container}>
                 <p>Our Menu</p>
-                <Image src={coffee} />
+                <Image src={coffee} priority={true} placeholder="blur" />
             </div>
             <div className={buttons.menu_container}>
                 <button
