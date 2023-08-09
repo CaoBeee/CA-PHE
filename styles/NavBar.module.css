@@ -47,8 +47,9 @@
 	justify-content: space-between;
 	transform: translateY(60px);
 	transition: transform 0.3s ease-in-out;
-	font-family: 'Quicksand';
+	font-family: 'Quicksand', sans-serif;
 	font-size: 2rem;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbarScrolled > ul {
