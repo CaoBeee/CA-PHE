@@ -1,120 +1,161 @@
-.contact h1 {
-	font-family: 'Quicksand';
-	padding: 5px 0px;
+.main {
+	display: flex;
+	font-family: 'Lora';
+	margin: 0;
+	width: 100%;
+}
+
+.contactUsContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 40%;
+	color: #000;
+	font-size: 2rem;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 32px;
-	line-height: 39px;
+	line-height: normal;
+	margin-left: 5rem;
+	margin-top: 8rem;
 }
 
-#form_header {
-	margin-left: 11em;
+.contactUsContainer > h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
 }
 
-.contact {
-	padding-top: 5em;
-	margin-right: 4em;
-	min-height: 75vh;
+.contactUsContainer p {
+	font-size: 1.25rem;
+	margin: 0;
 }
 
-.contact p {
-	font-family: 'Quicksand';
+.contactFormContainer {
+	width: 50%;
+	margin-top: 8rem;
+}
+
+.contactFormContainer > h1 {
+	width: 80%;
+	font-size: 2rem;
+}
+
+.contactFormContainer form {
+	display: block;
+	font-family: Quicksand;
+	font-size: 1.25rem;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 20px;
+	font-weight: 600;
+	line-height: normal;
+	width: 100%;
 }
 
-.contact span {
-	font-weight: bold;
+.contactFormContainer fieldset {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-.contact form {
-	width: fit-content;
+.contactFormContainer input {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-.contact fieldset {
-	border: none;
-}
-
-	.contact input:not(textarea) {
-		width: 60em;
-		max-width: 50vw;
-		padding: 0.5em;
-		background: none;
-		margin-bottom: -1em;
-		margin-left: 22em;
-		border: 1px solid black;
-	}
-
-	.contact input[type='textarea'] {
-		height: 10em;
-		width: 30em;
-		max-width: 50vw;
-	}
-
-.contact input[type='textarea']::placeholder {
-	position: relative;
-	white-space: pre-line;
-}
-
-.contact textarea {
-	height: 10em;
-	width: 60em;
-	max-width: 50vw;
-	background: none;
-	border: 1px solid black;
-	padding: 0.5em;
-	margin-left: 22em;
-}
-
-.contact input[type='textarea']:-ms-input-placeholder {
-	position: relative;
-	white-space: pre-line;
-}
-
-.contact input[type='textarea']::-webkit-input-placeholder {
-	position: relative;
-	white-space: pre-line;
-}
-
-.contact input[type='textarea']::selection {
-	vertical-align: top;
-	line-height: 1.2em;
-}
-
-.contact input[type='submit'] {
-	float: right;
-	width: 8em;
-	border-radius: 10px;
-	background-color: #adc178;
-	font-family: 'Quicksand';
+.contactFormContainer fieldset > input:last-of-type {
+	all: unset;
+	display: flex;
+	bottom: 0;
+	border-radius: 0.5rem;
+	background: #adc178;
+	width: 30%;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	color: #000;
+	text-align: center;
+	font-family: Quicksand;
+	font-size: 2rem;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
-	transition: all 0.3s ease-in;
+	line-height: normal;
+	justify-content: center;
+	align-self: flex-end;
 }
 
-.contact input[type='submit']:hover {
-	filter: brightness(0.85);
+.contactFormContainer fieldset input {
+	display: block;
+	font-family: Quicksand;
+	background: #eee5e9;
+	height: 3rem;
+	font-size: 1.25rem;
+	font-style: normal;
+	line-height: normal;
+}
+
+.contactFormContainer textarea {
+	padding: 0.5rem 3.4375rem 0rem 0.5625rem;
+	width: 100%;
+	height: 25.1875rem;
+	align-items: center;
+	border: 2px solid #000;
+	z-index: 999;
+	background-color: rgba(149, 149, 149, 0);
 }
 
 #green {
 	position: absolute;
-	left: -6em;
-	bottom: 11em;
 	z-index: -1;
-	transform: scale(1);
-	max-width: 50vw;
-	height:auto;
+	flex-shrink: 0;
 }
 
 #brown {
 	position: absolute;
 	z-index: -1;
-	transform: scale(1);
-	right: -1em;
-	bottom: -7em;
-	max-width: 50vw;
-	height:auto;
+	right: 0;
+	top: 35em;
+	height: auto;
+}
+
+@media (max-width: 767px) {
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contactUsContainer {
+		width: 78%;
+	}
+
+	.contactFormContainer {
+		padding: 1rem;
+		width: 100%;
+	}
+
+	.contactFormContainer fieldset > input:last-of-type {
+		width: 100%;
+		margin: auto;
+		padding: 1rem 0;
+		font-size: 2rem;
+		justify-self: center;
+		align-self: center;
+	}
+
+	#green {
+		position: absolute;
+		z-index: -1;
+		height: auto;
+		width: 100vw;
+		top: 15em;
+	}
+
+	#brown {
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		top: 70em;
+		height: auto;
+		width: 100vw;
+	}
 }

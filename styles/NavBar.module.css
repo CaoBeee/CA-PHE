@@ -39,8 +39,8 @@
 .navbarScrolled {
 	display: flex;
 	background: #adc178;
-	position: fixed;
-	top: -60px;
+	/* position: fixed; */
+	/* top: -60px; */
 	width: 100%;
 	z-index: 999;
 	justify-content: space-between;
@@ -92,6 +92,7 @@
 
 @media (max-width: 767px) {
 	.navbarScrolled {
+		/* all: unset; */
 		display: none;
 	}
 }
