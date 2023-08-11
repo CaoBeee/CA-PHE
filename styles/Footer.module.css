@@ -26,8 +26,47 @@
 	align-items: center;
 }
 
-.column:first-child {
-	margin: 0rem -5rem;
+@media (max-width: 767px) {
+	.column {
+		display: flex;
+		width: 100%;
+		padding: 0;
+		margin: 2rem;
+	}
+
+	.contactUsText {
+		display: flex;
+		flex-shrink: 1;
+	}
+
+	.header3 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1366px) and (max-width: 1919px) {
+	.container {
+		flex-wrap: nowrap;
+	}
+
+	.column:first-child {
+		margin: 0rem -4rem;
+	}
+	.column {
+		width: 100%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+
+	.hoursContainer {
+		width: auto;
+	}
+}
+@media (min-width: 1920px) {
+	.column:first-child {
+		margin: 0rem -5rem;
+	}
 }
 
 .header3 {
@@ -101,7 +140,8 @@
 }
 
 .lineThree {
-	margin-bottom: 2rem;
+	margin-bottom: 1em;
+	float: left;
 }
 .storeHours {
 	display: flex;

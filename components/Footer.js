@@ -67,7 +67,7 @@ const Footer = () => {
 						</div>
 						<div className={styles.storeHours}>
 							<div className={styles.daysContainer}>
-								<div className={styles.days}>Monday-Friday</div>
+								<div className={styles.days}>Mon-Fri</div>
 								<br />
 								<div className={styles.days}>Saturday</div>
 								<br />
@@ -75,29 +75,29 @@ const Footer = () => {
 								<br />
 							</div>
 							<div className={styles.HoursContainer}>
-								<div className={styles.hours}>7:00 - 18:00</div>
+								<div className={styles.hours}>7:00-18:00</div>
 								<br />
-								<div className={styles.hours}>7:00 - 18:00</div>
+								<div className={styles.hours}>7:00-18:00</div>
 								<br />
 								<div className={styles.hours}>Closed</div>
-								<br />
 							</div>
 						</div>
 					</div>
 					<div className={styles.column}>
-						<div>
-							<h3 className={styles.header3}>Contact Us</h3>
-							<div
-								className={styles.lineThree}
-								style={{
-									display: 'flex',
-									width: '101px',
-									height: '1px',
-									border: '2px white solid',
-									float: 'left',
-								}}
-							></div>
-							<br />
+						<div className={styles.column}>
+							<div>
+								<h3 className={styles.header3}>Contact Us</h3>
+								<div
+									className={styles.lineThree}
+									style={{
+										display: 'flex',
+										width: '101px',
+										height: '1px',
+										border: '2px white solid',
+										float: 'left',
+									}}
+								></div>
+							</div>
 							<div className={styles.contactUsText}>
 								24680 California Drive, <br />
 								Garden Grove, CA 92844
@@ -106,7 +106,6 @@ const Footer = () => {
 							<div className={styles.contactUsText}>hello@caphe.com</div>
 							<br />
 							<div className={styles.contactUsText}>(714) 246-3579</div>
-							<br />
 						</div>
 					</div>
 					<div className={styles.column}>

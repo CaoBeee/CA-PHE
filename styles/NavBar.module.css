@@ -38,7 +38,6 @@
 
 .navbarScrolled {
 	display: flex;
-	/* background: linear-gradient(180deg, #adc178 60.85%, rgba(255, 255, 255, 0) 100%); */
 	background: #adc178;
 	position: fixed;
 	top: -60px;
@@ -53,9 +52,13 @@
 }
 
 .navbarScrolled > ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	width: 50%;
 	padding: 0;
 	margin: 0;
+	align-items: center;
 }
 
 .navbarScrolled ul > li > a {
@@ -85,4 +88,10 @@
 	display: flex;
 	width: inherit;
 	height: inherit;
+}
+
+@media (max-width: 767px) {
+	.navbarScrolled {
+		display: none;
+	}
 }
