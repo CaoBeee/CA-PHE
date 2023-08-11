@@ -1,201 +1,201 @@
 .container {
-    width: 85%;
-    margin-top: 1em;
-    margin-left: 4.5em;
-    font-family: 'Lora';
-    display: flex;
-    height: fit-content;
-    justify-content: space-evenly;
+	width: 85%;
+	margin-top: 1em;
+	margin-left: 4.5em;
+	font-family: 'Lora';
+	display: flex;
+	height: fit-content;
+	justify-content: space-evenly;
 }
 
 .item_image {
-    width: 10.9375em;
-    height: 15.625em;
-    object-fit: cover;
-    box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
-    border-radius: 1.25em;
-    transition: all .3s ease-in;
+	width: 10.9375em;
+	height: 15.625em;
+	object-fit: cover;
+	box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.25);
+	border-radius: 1.25em;
+	transition: all 0.3s ease-in;
 }
 
-.item_image:hover{
-    transform:scale(1.05);
-    cursor:pointer;
+.item_image:hover {
+	transform: scale(1.05);
+	cursor: pointer;
 }
 
-.item_image:hover + .name{
-    transform:scale(1.05);
+.item_image:hover + .name {
+	transform: scale(1.05);
 }
 
-    .item_image:hover ~ .calories {
-        transform: scale(1.05);
-    }
+.item_image:hover ~ .calories {
+	transform: scale(1.05);
+}
 
-    .item_image:hover ~ .icon_container{
-        transform: scale(1.05);
-    }
+.item_image:hover ~ .icon_container {
+	transform: scale(1.05);
+}
 
 .name {
-    display: block;
-    align-items: center;
-    text-align: center;
-    height: fit-content;
-    letter-spacing: 0.05em;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1.9375em;
-    margin-left: auto;
-    margin-right:auto;
-    transition: all .3s linear;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 8em;
+	display: block;
+	align-items: center;
+	text-align: center;
+	height: fit-content;
+	letter-spacing: 0.05em;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height: 1.9375em;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 0.3s linear;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 8em;
 }
 
-.name:hover{
-    filter: brightness(3);
-    cursor:pointer;
+.name:hover {
+	filter: brightness(3);
+	cursor: pointer;
 }
 
 .calories {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1.9375em;
-    margin: auto;
-    transition: all .3s ease-in;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.05em;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height: 1.9375em;
+	margin: auto;
+	transition: all 0.3s ease-in;
 }
 
 .icon_container {
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 6em;
-    gap: 1em;
-    width: 11.25em;
-    justify-content: center;
-    transition: all .3s ease-in;
+	display: flex;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 6em;
+	gap: 1em;
+	width: 11.25em;
+	justify-content: center;
+	transition: all 0.3s ease-in;
 }
 
 .icon {
-    height: 3.125em;
-    width: 3.125em;
+	height: 3.125em;
+	width: 3.125em;
 }
 
 @media (max-width: 1368px) {
-    .container {
-        margin-left: 5.42em;
-    }
+	.container {
+		margin-left: 5.42em;
+	}
 
-    .item_image {
-        width: 7.3em;
-        height: 10.423em;
-    }
+	.item_image {
+		width: 7.3em;
+		height: 10.423em;
+	}
 
-    .name {
-        font-size: 1.25em;
-    }
+	.name {
+		font-size: 1.25em;
+	}
 
-    .calories {
-        font-size: 1.25em;
-    }
+	.calories {
+		font-size: 1.25em;
+	}
 
-    .icon_container {
-        width: 7.5em;
-    }
+	.icon_container {
+		width: 7.5em;
+	}
 
-    .icon {
-        width: 2.084em;
-        height: 2.084em;
-    }
+	.icon {
+		width: 2.084em;
+		height: 2.084em;
+	}
 }
 
-@media (max-width: 1024px){
-    .container {
-        margin-left: 3.62em;
-    }
+@media (max-width: 1024px) {
+	.container {
+		margin-left: 3.62em;
+	}
 
-    .item_image {
-        width: 4.87em;
-        height: 6.95em;
-    }
+	.item_image {
+		width: 4.87em;
+		height: 6.95em;
+	}
 
-    .name {
-        font-size: 1em;
-    }
+	.name {
+		font-size: 1em;
+	}
 
-    .calories {
-        font-size: 1em;
-    }
+	.calories {
+		font-size: 1em;
+	}
 
-    .icon_container {
-        width: 5em;
-    }
+	.icon_container {
+		width: 5em;
+	}
 
-    .icon {
-        width: 1.39em;
-        height: 1.39em;
-    }
+	.icon {
+		width: 1.39em;
+		height: 1.39em;
+	}
 }
 
 @media (max-width: 768px) {
-    .container {
-        margin-left: 2.72em;
-    }
+	.container {
+		margin-left: 2.72em;
+	}
 
-    .item_image {
-        width: 3.65em;
-        height: 5.21em;
-    }
+	.item_image {
+		width: 3.65em;
+		height: 5.21em;
+	}
 
-    .name {
-        font-size: 0.9em;
-    }
+	.name {
+		font-size: 0.9em;
+	}
 
-    .calories {
-        font-size: 0.9em;
-    }
+	.calories {
+		font-size: 0.9em;
+	}
 
-    .icon_container {
-        width: 3.75em;
-        gap: .75em;
-    }
+	.icon_container {
+		width: 3.75em;
+		gap: 0.75em;
+	}
 
-    .icon {
-        width: 1.04em;
-        height: 1.04em;
-    }
+	.icon {
+		width: 1.04em;
+		height: 1.04em;
+	}
 }
 
 @media (max-width: 480px) {
-    .container {
-        margin-left: 1.7em;
-    }
+	.container {
+		margin-left: 1.7em;
+	}
 
-    .item_image {
-        width: 2.28em;
-        height: 3.26em;
-    }
+	.item_image {
+		width: 2.28em;
+		height: 3.26em;
+	}
 
-    .name {
-        font-size: 0.8em;
-    }
+	.name {
+		font-size: 0.8em;
+	}
 
-    .calories {
-        font-size: 0.8em;
-    }
+	.calories {
+		font-size: 0.8em;
+	}
 
-    .icon_container {
-        width: 2.34em;
-        gap: .5em;
-    }
+	.icon_container {
+		width: 2.34em;
+		gap: 0.5em;
+	}
 
-    .icon {
-        width: .9em;
-        height: .9em;
-    }
+	.icon {
+		width: 0.9em;
+		height: 0.9em;
+	}
 }
