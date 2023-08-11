@@ -12,7 +12,7 @@ import longsleeve from '../public/images/longsleeve-white.jpg'
 import longsleeve2 from '../public/images/longsleeve-white2.jpg'
 
 const Shop = () => {
-	const [shop, setShop] = useState([0])
+	const [shop] = useState([0])
 	const [hovered, setHovered] = useState(-1)
 	const [categories, setCategories] = useState({
 		all: true,
@@ -22,29 +22,31 @@ const Shop = () => {
 		long_sleeves: false,
 		pants: false,
 		shoes: false,
-	});
+	})
 
 	const categoriesMap1 = [
 		{ key: 'all', label: 'All' },
 		{ key: 'shirts', label: 'Shirts' },
 		{ key: 'tops', label: 'Tops' },
 		{ key: 'jackets', label: 'Jackets' },
-	];
+	]
 
 	const categoriesMap2 = [
 		{ key: 'long_sleeves', label: 'Long Sleeves' },
 		{ key: 'pants', label: 'Pants' },
 		{ key: 'shoes', label: 'Shoes' },
-	];
+	]
 
-	const renderButtons = (categoriesMap, startIndex) => (
+	const renderButtons = (categoriesMap, startIndex) =>
 		categoriesMap.map((category, index) => (
 			<button
 				key={category.key}
 				className={buttons.shop_button}
 				style={{
 					backgroundColor: categories[category.key] ? '#788264' : '#ADC178',
-					filter: (hovered === startIndex + index && shop !== startIndex + index && 'brightness(0.8)') || 'brightness(1)',
+					filter:
+						(hovered === startIndex + index && shop !== startIndex + index && 'brightness(0.8)') ||
+						'brightness(1)',
 				}}
 				onClick={() => toggleCategory(category.key)}
 				onMouseEnter={() => setHovered(startIndex + index)}
@@ -53,7 +55,6 @@ const Shop = () => {
 				{category.label}
 			</button>
 		))
-	);
 
 	const itemList = [
 		<ShopItem
@@ -100,7 +101,7 @@ const Shop = () => {
 		/>,
 	]
 
-	const toggleCategory = (category) => {
+	const toggleCategory = category => {
 		if (category === 'all') {
 			setCategories({
 				all: true,
@@ -110,31 +111,29 @@ const Shop = () => {
 				long: false,
 				pant: false,
 				shoe: false,
-			});
+			})
 		} else {
-			setCategories((prevCategories) => {
+			setCategories(prevCategories => {
 				const newCategories = {
 					...prevCategories,
 					all: false,
 					[category]: !prevCategories[category],
-				};
-
-				if (!Object.values(newCategories).some((value) => value)) {
-					newCategories.all = true;
 				}
 
-				return newCategories;
-			});
+				if (!Object.values(newCategories).some(value => value)) {
+					newCategories.all = true
+				}
+
+				return newCategories
+			})
 		}
-	};
+	}
 
 	const shopItems = useMemo(() => {
-		if (categories.all) return itemList;
+		if (categories.all) return itemList
 
-		return itemList.filter((item) =>
-			categories[item.props.category]
-		);
-	}, [categories, itemList]);
+		return itemList.filter(item => categories[item.props.category])
+	}, [categories, itemList])
 
 	return (
 		<div className={styles.container}>
@@ -145,16 +144,12 @@ const Shop = () => {
 					placeholder='blur'
 					width={1920}
 					height={1080}
-					priority={true }
+					priority={true}
 				/>
 			</div>
 			<div className={buttons.shop_container}>
-				<div>
-					{renderButtons(categoriesMap1, 0) }
-				</div>
-				<div>
-					{renderButtons(categoriesMap2, categoriesMap1.length)}
-				</div>
+				<div>{renderButtons(categoriesMap1, 0)}</div>
+				<div>{renderButtons(categoriesMap2, categoriesMap1.length)}</div>
 			</div>
 			<div className={styles.item_container}>{shopItems}</div>
 		</div>
