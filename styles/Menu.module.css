@@ -210,4 +210,8 @@
 	.menu_header {
 		margin-left: 1.5em;
 	}
+
+	.menu_item_container {
+		margin-left: 0;
+	}
 }
