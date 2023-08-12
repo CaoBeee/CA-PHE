@@ -40,10 +40,11 @@
 	display: flex;
 	background: #adc178;
 	position: fixed;
-	top: -60px;
+	top: -90px;
 	width: 100%;
 	z-index: 999;
 	justify-content: space-between;
+	align-items: center;
 	transition: transform 0.3s ease-in-out;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 2rem;
@@ -52,38 +53,40 @@
 
 .navbarScrolled li {
 	list-style-type: none;
-	display: inline-block;
+	display: flex;
+	margin: auto;
+	height: 100%;
 }
 
 .toggleNavbar {
 	transition: transform 0.3s ease-in-out;
-	transform: translateY(60px);
+	transform: translateY(90px);
 }
 
 .navbarScrolled > ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	width: 50%;
 	padding: 0;
 	margin: 0;
 	align-items: center;
 }
 
 .navbarScrolled ul > li > a {
-	padding: 0.6rem;
+	height: 100%;
 	color: black;
 	text-align: center;
 	align-items: center;
+	justify-content: center;
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	font-size: 1.375rem;
 	font-weight: 500;
 	font-family: 'Quicksand';
 	height: inherit;
 	width: 10rem;
-	margin-right: 1rem;
+	margin-right: 2rem;
+	padding: 0.5rem;
 	border-radius: 0.5rem;
 }
 
@@ -113,7 +116,6 @@
 
 @media (max-width: 767px) {
 	.navbarScrolled {
-		/* all: unset; */
 		display: none;
 	}
 }
