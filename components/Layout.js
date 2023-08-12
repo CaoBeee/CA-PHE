@@ -12,10 +12,9 @@ export default function Layout({ children }) {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollThreshold = 100
-			const isScrolled = window.scrollY > scrollThreshold
+			const scrollThreshold = 200
+			const isScrolled = window.scrollY > scrollThreshold && scrollThreshold !== 235
 			setIsSticky(isScrolled)
-			document.documentElement.classList.toggle('scrolled', isScrolled)
 		}
 
 		window.addEventListener('scroll', handleScroll)
