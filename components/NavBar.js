@@ -6,8 +6,6 @@ import Image from 'next/image'
 import PropTypes from 'prop-types'
 
 const NavBar = ({ isSticky }) => {
-	const navbarClasses = `${isSticky ? styles.toggleNavbar : ''}`
-
 	const stickyImg = () => {
 		return (
 			<Link href={'/'}>
